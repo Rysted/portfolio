@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 const Theme = () => {
-  const [theme, setTheme] = useState(() => {
+  const [theme, setTheme] = useState<"dark" | "light">(() => {
     if (window.matchMedia("(prefers-color-scheme: dark)")) {
       return "dark";
     }
@@ -22,7 +22,7 @@ const Theme = () => {
 
   return (
     <button
-      className="hidden md:block py-2 px-4 hover:bg-gray dark:hover:bg-dark_indigo transition-all ease-in duration-300 w-full"
+      className="md:block py-2 px-4 hover:bg-gray dark:hover:bg-dark_DeepPurple transition-all ease-in duration-300 w-full"
       onClick={handleChangeTheme}
     >
       {theme === "dark" ? (

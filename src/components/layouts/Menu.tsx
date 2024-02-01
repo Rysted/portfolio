@@ -1,9 +1,9 @@
-const Menu = () => {
+const Menu = ({ toggleSidebar }: { toggleSidebar: () => void }) => {
   return (
-    <button className="md:hidden">
+    <button onClick={toggleSidebar}>
       <img
         src="./icons/menu.svg"
-        alt="Icono del menú"
+        alt="Icono para abrir el menú"
         className="w-10 dark:invert"
       />
     </button>
