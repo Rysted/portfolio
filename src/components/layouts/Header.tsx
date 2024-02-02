@@ -4,10 +4,21 @@ import Menu from "./Menu";
 import Theme from "./Theme";
 
 // Icons
-import { Home, AboutMe, Services, Contact } from "../../Icons/Icons";
+import {
+  Home,
+  AboutMe,
+  NavArrowDown,
+  Services,
+  Contact,
+} from "../../Icons/Icons";
 
 const Header = () => {
   const [isOpenMenu, setIsOpenMenu] = useState<boolean>(false);
+  const [subMenu, setSubMenu] = useState<boolean>(false);
+
+  const toggleSubMenu = () => {
+    setSubMenu(!subMenu);
+  };
 
   const toggleSidebar = () => {
     setIsOpenMenu(!isOpenMenu);
@@ -24,6 +35,12 @@ const Header = () => {
         />
         <Menu isOpenMenu={isOpenMenu} toggleSidebar={toggleSidebar} />
       </div>
+      <div
+        className={`${
+          isOpenMenu ? "fixed" : "hidden"
+        } w-full h-full bg-dark_background dark:bg-light_background opacity-30 cursor-pointer`}
+        onClick={toggleSidebar}
+      ></div>
       <div
         className={`bg-light_background dark:bg-dark_background fixed ${
           isOpenMenu ? "right-0" : "-right-56"
@@ -47,15 +64,40 @@ const Header = () => {
               </a>
             </li>
             <li>
-              <a
-                href="#about"
+              <button
                 className="group flex gap-x-3 py-2 transition-all ease-in duration-300"
+                onClick={toggleSubMenu}
               >
                 <AboutMe hover={true} />
                 <span className="text-base font-semibold dark:text-dark_text group-hover:text-primary transition-all ease-in duration-200">
                   Sobre mí
                 </span>
-              </a>
+                <NavArrowDown hover={true} subMenu={subMenu} />
+              </button>
+              <div
+                className={`${
+                  subMenu ? "h-28 py-2" : "h-0 py-0"
+                } overflow-hidden px-2 flex flex-col justify-between bg-light_highlight dark:bg-dark_highlight rounded transition-all ease-in duration-200`}
+              >
+                <a
+                  href="#skills"
+                  className="text-base font-medium text-light_text_secondary dark:text-dark_text hover:text-primary transition-all ease-in duration-200"
+                >
+                  Habilidades
+                </a>
+                <a
+                  href="#projects"
+                  className="text-base font-medium text-light_text_secondary dark:text-dark_text hover:text-primary transition-all ease-in duration-200"
+                >
+                  Proyectos
+                </a>
+                <a
+                  href="#formation"
+                  className="text-base font-medium text-light_text_secondary dark:text-dark_text hover:text-primary transition-all ease-in duration-200"
+                >
+                  Fromación
+                </a>
+              </div>
             </li>
             <li>
               <a

@@ -8,9 +8,9 @@ export const Burger = ({
   return (
     <>
       <svg
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
         viewBox="0 0 24 24"
         xmlns="http://www.w3.org/2000/svg"
         className={`${
@@ -41,9 +41,9 @@ export const Close = ({ hover = false }: { hover: boolean }) => {
     <svg
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
-      stroke-width="2"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
       className={`${
         hover
           ? "group-hover:stroke-primary transition-all ease-in duration-200"
@@ -59,9 +59,9 @@ export const Home = ({ hover = false }: { hover: boolean }) => {
   return (
     <svg
       viewBox="0 0 24 24"
-      stroke-width="2"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
       xmlns="http://www.w3.org/2000/svg"
       className={`${
         hover
@@ -81,9 +81,9 @@ export const AboutMe = ({ hover = false }: { hover: boolean }) => {
     <svg
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
-      stroke-width="2"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
       className={`${
         hover
           ? "group-hover:stroke-primary transition-all ease-in duration-200"
@@ -97,13 +97,41 @@ export const AboutMe = ({ hover = false }: { hover: boolean }) => {
   );
 };
 
+export const NavArrowDown = ({
+  hover = false,
+  subMenu,
+}: {
+  hover: boolean;
+  subMenu: boolean;
+}) => {
+  return (
+    <svg
+      stroke-width="1.5"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className={`${
+        hover
+          ? "group-hover:stroke-primary transition-all ease-in duration-200"
+          : ""
+      } ${
+        subMenu ? "rotate-180" : "rotate-0"
+      } h-5 my-auto stroke-light_text dark:stroke-dark_text fill-none`}
+    >
+      <path d="M6 9L12 15L18 9"></path>
+    </svg>
+  );
+};
+
 export const Services = ({ hover = false }: { hover: boolean }) => {
   return (
     <svg
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
-      stroke-width="2"
-      stroke-linejoin="round"
+      strokeWidth="2"
+      strokeLinejoin="round"
       className={`${
         hover
           ? "group-hover:stroke-primary transition-all ease-in duration-200"
@@ -121,9 +149,9 @@ export const Contact = ({ hover = false }: { hover: boolean }) => {
     <svg
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
-      stroke-width="2"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
       className={`${
         hover
           ? "group-hover:stroke-primary transition-all ease-in duration-200"
@@ -141,9 +169,9 @@ export const Sun = ({ hover = false }: { hover: boolean }) => {
     <svg
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
-      stroke-width="2"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
       className={`${
         hover
           ? "group-hover:stroke-primary transition-all ease-in duration-200"
@@ -168,9 +196,9 @@ export const Moon = ({ hover = false }: { hover: boolean }) => {
     <svg
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
-      stroke-width="2"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
       className={`${
         hover
           ? "group-hover:stroke-primary transition-all ease-in duration-200"
