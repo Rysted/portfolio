@@ -16,7 +16,7 @@ const Header = () => {
 
   return (
     <header>
-      <div className="fixed top-0 w-full h-20 flex justify-between p-5 bg-light_background dark:bg-dark_background shadow-light_bottom md:-top-20 transition-all duration-500">
+      <div className="md:hidden fixed top-0 w-full h-20 flex justify-between p-5 bg-light_background dark:bg-dark_background shadow-light_bottom">
         <img
           src="./logotipo.png"
           alt="Icono del logotipo"
