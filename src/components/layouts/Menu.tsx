@@ -1,5 +1,5 @@
 // Icons
-import { Burger } from "../../Icons/Icons";
+import { Burger } from "../../icons/Icons";
 
 const Menu = ({
   isOpenMenu,

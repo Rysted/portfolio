@@ -4,7 +4,7 @@ import Menu from "./Menu";
 import Theme from "./Theme";
 
 // Icons
-import { Home, AboutMe, Services, Contact } from "../../Icons/Icons";
+import { Home, AboutMe, Services, Contact } from "../../icons/Icons";
 
 const Header = () => {
   const [isOpenMenu, setIsOpenMenu] = useState<boolean>(false);

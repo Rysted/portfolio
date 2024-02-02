@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 // Icons
-import { Sun, Moon } from "../../Icons/Icons";
+import { Sun, Moon } from "../../icons/Icons";
 
 const Theme = () => {
   const [theme, setTheme] = useState<"dark" | "light">(() => {
