@@ -1,4 +1,4 @@
-import Header from "./components/Layouts/Header.tsx";
+import Header from "./components/Layouts/Header";
 
 const App = () => {
   return (
