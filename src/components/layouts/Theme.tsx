@@ -1,11 +1,13 @@
 import { useEffect, useState } from "react";
 
+// Icons
+import { Sun, Moon } from "../../Icons/Icons";
+
 const Theme = () => {
   const [theme, setTheme] = useState<"dark" | "light">(() => {
-    if (window.matchMedia("(prefers-color-scheme: dark)")) {
-      return "dark";
-    }
-    return "light";
+    return window.matchMedia("(prefers-color-scheme: dark)").matches
+      ? "dark"
+      : "light";
   });
 
   const handleChangeTheme = () => {
@@ -13,38 +15,24 @@ const Theme = () => {
   };
 
   useEffect(() => {
-    if (theme === "dark") {
-      document.querySelector("html")?.classList.add("dark");
-    } else {
-      document.querySelector("html")?.classList.remove("dark");
+    const htmlElement = document.querySelector("html");
+
+    if (htmlElement) {
+      htmlElement.classList.toggle("dark", theme === "dark");
     }
   }, [theme]);
 
   return (
     <button
-      className="md:block py-2 px-4 hover:bg-gray dark:hover:bg-dark_DeepPurple transition-all ease-in duration-300 w-full"
+      className="group py-2 transition-all ease-in duration-300 w-full md:block"
       onClick={handleChangeTheme}
     >
-      {theme === "dark" ? (
-        <div className="flex gap-3">
-          <img
-            src="./icons/moon.svg"
-            alt="Icono de la luna"
-            className="md:h-5 my-auto dark:invert"
-          />
-          <span className="text-base font-semibold dark:invert">Oscuro</span>
-        </div>
-      ) : (
-        <div className="flex gap-3">
-          <img
-            src="./icons/sun.svg"
-            alt="Icono del sol"
-            className="md:h-5 my-auto"
-          />
-
-          <span className="text-base font-semibold">Claro</span>
-        </div>
-      )}
+      <div className="flex gap-3">
+        {theme === "dark" ? <Moon hover={true} /> : <Sun hover={true} />}
+        <span className="text-base font-semibold dark:text-dark_text group-hover:text-primary transition-all ease-in duration-200">
+          {theme === "dark" ? "Oscuro" : "Claro"}
+        </span>
+      </div>
     </button>
   );
 };

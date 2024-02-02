@@ -8,12 +8,17 @@ export default {
     },
     extend: {
       colors: {
-        primary: "#1a139b",
-        secondary: "#362fbd",
-        white: "#ffffff",
-        gray: "#e5eaf2",
-        dark_MidnightBlue: "#1B1E37",
-        dark_DeepPurple: "#443D68",
+        primary: "#5657FF",
+        light_text: "#000000",
+        light_background: "#FFFFFF",
+        light_highlight: "#F5F5F5",
+        dark_text: "#FFFFFF",
+        dark_background: "#171717",
+        dark_highlight: "#212121",
+      },
+      boxShadow: {
+        light_left: "-0px 10px 10px 0px rgba(0,0,0,0.75)",
+        light_bottom: "-0px 0px 10px 0px rgba(0,0,0,0.75)",
       },
     },
   },

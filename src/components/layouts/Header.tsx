@@ -1,57 +1,47 @@
-import Theme from "./Theme";
-import Menu from "./Menu";
 import { useState } from "react";
 
+import Menu from "./Menu";
+import Theme from "./Theme";
+
+// Icons
+import { Home, AboutMe, Services, Contact } from "../../Icons/Icons";
+
 const Header = () => {
-  const [isOpen, setIsOpen] = useState<boolean>(false);
+  const [isOpenMenu, setIsOpenMenu] = useState<boolean>(false);
 
   const toggleSidebar = () => {
-    setIsOpen(!isOpen);
+    setIsOpenMenu(!isOpenMenu);
+    document.body.style.overflowY = isOpenMenu ? "scroll" : "hidden";
   };
 
   return (
     <header>
-      <div className="md:hidden absolute top-0 w-full h-20 flex justify-between p-5 bg-white dark:bg-dark_MidnightBlue shadow-md">
+      <div className="fixed top-0 w-full h-20 flex justify-between p-5 bg-light_background dark:bg-dark_background shadow-light_bottom md:-top-20 transition-all duration-500">
         <img
           src="./logotipo.png"
           alt="Icono del logotipo"
-          className="w-10 my-auto md:my-0 md:mx-auto md:mb-5 dark:invert"
+          className="w-10 my-auto dark:invert"
         />
-        <Menu toggleSidebar={toggleSidebar} />
+        <Menu isOpenMenu={isOpenMenu} toggleSidebar={toggleSidebar} />
       </div>
       <div
-        className={`bg-white dark:bg-dark_MidnightBlue absolute ${
-          isOpen ? "right-0" : "-right-52"
-        } top-0 md:right-0 md:top-0 w-52 h-screen flex-col justify-start shadow-md px-0 font-poppins transition-all duration-500`}
+        className={`bg-light_background dark:bg-dark_background fixed ${
+          isOpenMenu ? "right-0" : "-right-56"
+        } top-20 md:right-0 md:top-0 w-52 h-screen flex-col justify-start px-0 font-poppins shadow-light_left ease-linear transition-all duration-300`}
       >
-        <button
-          onClick={toggleSidebar}
-          className="flex justify-end w-full pr-5"
-        >
+        <div className=" flex justify-end">
           <img
-            src="./icons/close.svg"
-            alt="Icono para cerrar el menú"
-            className="w-10 my-8 mb-5 md:hidden dark:invert"
+            src="./logotipo.png"
+            alt="Icono del logotipo"
+            className={`opacity-0 w-0 my-0 md:opacity-100 md:w-10 md:my-8 md:mx-auto md:mb-5 md:block dark:invert`}
           />
-        </button>
-        <img
-          src="./logotipo.png"
-          alt="Icono del logotipo"
-          className={`opacity-0 w-0 my-0 md:opacity-100 md:w-10 md:my-8 md:mx-auto md:mb-5 md:block dark:invert`}
-        />
+        </div>
         <nav className="md:block">
-          <ul className="flex flex-col gap-y-2">
+          <ul className="flex flex-col gap-y-2 px-5">
             <li>
-              <a
-                href="#home"
-                className="flex gap-x-3 py-2 px-4 group hover:bg-gray dark:hover:bg-dark_DeepPurple transition-all ease-in duration-300"
-              >
-                <img
-                  src="./icons/home.svg"
-                  alt="Icono del inicio"
-                  className="h-5 my-auto dark:invert"
-                />
-                <span className="text-base font-semibold dark:invert">
+              <a href="#home" className="group flex gap-x-3 py-2">
+                <Home hover={true} />
+                <span className="text-base font-semibold dark:text-dark_text group-hover:text-primary transition-all ease-in duration-200">
                   Inicio
                 </span>
               </a>
@@ -59,14 +49,10 @@ const Header = () => {
             <li>
               <a
                 href="#about"
-                className="flex gap-x-3 py-2 px-4 hover:bg-gray dark:hover:bg-dark_DeepPurple transition-all ease-in duration-300"
+                className="group flex gap-x-3 py-2 transition-all ease-in duration-300"
               >
-                <img
-                  src="./icons/about.svg"
-                  alt="Icono del sobre mí"
-                  className="h-5 my-auto dark:invert"
-                />
-                <span className="text-base font-semibold dark:invert">
+                <AboutMe hover={true} />
+                <span className="text-base font-semibold dark:text-dark_text group-hover:text-primary transition-all ease-in duration-200">
                   Sobre mí
                 </span>
               </a>
@@ -74,14 +60,10 @@ const Header = () => {
             <li>
               <a
                 href="#services"
-                className="flex gap-x-3 py-2 px-4 hover:bg-gray dark:hover:bg-dark_DeepPurple transition-all ease-in duration-300"
+                className="group flex gap-x-3 py-2 transition-all ease-in duration-300"
               >
-                <img
-                  src="./icons/services.svg"
-                  alt="Icono de servicios"
-                  className="h-5 my-auto dark:invert"
-                />
-                <span className="text-base font-semibold dark:invert">
+                <Services hover={true} />
+                <span className="text-base font-semibold dark:text-dark_text group-hover:text-primary transition-all ease-in duration-200">
                   Servicios
                 </span>
               </a>
@@ -89,14 +71,10 @@ const Header = () => {
             <li>
               <a
                 href="#contact"
-                className="flex gap-x-3 py-2 px-4 hover:bg-gray dark:hover:bg-dark_DeepPurple transition-all ease-in duration-300"
+                className="group flex gap-x-3 py-2 transition-all ease-in duration-300"
               >
-                <img
-                  src="./icons/contact.svg"
-                  alt="Icono de contacto"
-                  className="h-5 my-auto dark:invert"
-                />
-                <span className="text-base font-semibold dark:invert">
+                <Contact hover={true} />
+                <span className="text-base font-semibold dark:text-dark_text group-hover:text-primary transition-all ease-in duration-200">
                   Contacto
                 </span>
               </a>
