@@ -8,7 +8,9 @@ import {
   Home,
   AboutMe,
   NavArrowDown,
-  NavArrowRight,
+  BookCode,
+  Formation,
+  Code,
   Services,
   Contact,
 } from "../../Icons/Icons";
@@ -81,22 +83,22 @@ const Header = () => {
               <div
                 className={`${
                   subMenu ? "h-28 py-2" : "h-0 py-0"
-                } overflow-hidden flex flex-col justify-between bg-light_highlight dark:bg-dark_highlight rounded transition-all ease-in duration-200`}
+                } px-2 overflow-hidden flex flex-col justify-between bg-light_highlight dark:bg-dark_highlight rounded transition-all ease-in duration-200`}
               >
                 <a href="#skills" className="group flex gap-x-3">
-                  <NavArrowRight hover={true} />
+                  <BookCode hover={true} />
                   <span className="text-base font-medium text-light_text_secondary dark:text-dark_text group-hover:text-primary transition-all ease-in duration-200">
                     Habilidades
                   </span>
                 </a>
                 <a href="#projects" className="group flex gap-x-3">
-                  <NavArrowRight hover={true} />
+                  <Code hover={true} />
                   <span className="text-base font-medium text-light_text_secondary dark:text-dark_text group-hover:text-primary transition-all ease-in duration-200">
                     Proyectos
                   </span>
                 </a>
                 <a href="#formation" className="group flex gap-x-3">
-                  <NavArrowRight hover={true} />
+                  <Formation hover={true} />
                   <span className="text-base font-medium text-light_text_secondary dark:text-dark_text group-hover:text-primary transition-all ease-in duration-200">
                     Fromación
                   </span>

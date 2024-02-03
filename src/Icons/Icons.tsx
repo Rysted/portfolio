@@ -144,6 +144,73 @@ export const NavArrowRight = ({ hover = false }: { hover: boolean }) => {
   );
 };
 
+export const BookCode = ({ hover = false }: { hover: boolean }) => {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className={`${
+        hover
+          ? "group-hover:stroke-primary transition-all ease-in duration-200"
+          : ""
+      } h-5 my-auto stroke-light_text dark:stroke-dark_text fill-none`}
+    >
+      <path d="M4 19V5C4 3.89543 4.89543 3 6 3H19.4C19.7314 3 20 3.26863 20 3.6V16.7143" />
+      <path d="M6 17H20" />
+      <path d="M6 21C6 21 19 21 20 21" />
+      <path d="M6 21C4.89543 21 4 20.1046 4 19C4 17.8954 4.89543 17 6 17" />
+      <path d="M12.75 7L11 13.25" strokeWidth="1" />
+      <path d="M9.25 8.25L7.5 10L9.25 11.75" strokeWidth="1" />
+      <path d="M14.75 8.25L16.5 10L14.75 11.75" strokeWidth="1" />
+    </svg>
+  );
+};
+
+export const Code = ({ hover = false }: { hover: boolean }) => {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className={`${
+        hover
+          ? "group-hover:stroke-primary transition-all ease-in duration-200"
+          : ""
+      } h-5 my-auto stroke-light_text dark:stroke-dark_text fill-none`}
+    >
+      <path d="M13.5 6L10 18.5"></path>
+      <path d="M6.5 8.5L3 12L6.5 15.5"></path>
+      <path d="M17.5 8.5L21 12L17.5 15.5"></path>
+    </svg>
+  );
+};
+
+export const Formation = ({ hover = false }: { hover: boolean }) => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className={`${
+        hover
+          ? "group-hover:stroke-primary transition-all ease-in duration-200"
+          : ""
+      } h-5 my-auto stroke-light_text dark:stroke-dark_text fill-none`}
+    >
+      <path d="M0 0h24v24H0z" stroke="none"></path>
+      <path d="M22 9l-10 -4l-10 4l10 4l10 -4v6"></path>
+      <path d="M6 10.6v5.4a6 3 0 0 0 12 0v-5.4"></path>
+    </svg>
+  );
+};
+
 export const Services = ({ hover = false }: { hover: boolean }) => {
   return (
     <svg
