@@ -31,7 +31,7 @@ export const Burger = ({
         xmlns="http://www.w3.org/2000/svg"
         className={`${
           hover
-            ? "group-hover:stroke-primary transition-all ease-in duration-200"
+            ? "group-hover:stroke-primary transition-all duration-200 ease-in-out"
             : ""
         } w-10 stroke-light_text dark:stroke-dark_text fill-none`}
       >
@@ -62,7 +62,7 @@ export const Close = ({ hover }: { hover: boolean }) => {
       strokeLinejoin="round"
       className={`${
         hover
-          ? "group-hover:stroke-primary transition-all ease-in duration-200"
+          ? "group-hover:stroke-primary transition-all duration-200 ease-in-out"
           : ""
       } w-10 md:hidden stroke-light_text dark:stroke-dark_text fill-none`}
     >
@@ -81,7 +81,7 @@ export const Home = ({ hover }: { hover: boolean }) => {
       xmlns="http://www.w3.org/2000/svg"
       className={`${
         hover
-          ? "group-hover:stroke-primary transition-all ease-in duration-200"
+          ? "group-hover:stroke-primary transition-all duration-200 ease-in-out"
           : ""
       } h-5 stroke-light_text dark:stroke-dark_text fill-none`}
     >
@@ -112,7 +112,7 @@ export const AboutMe = ({
           : "stroke-light_text dark:stroke-dark_text"
       } ${
         hover
-          ? "group-hover:stroke-primary_hover transition-all ease-in duration-200"
+          ? "group-hover:stroke-primary_hover transition-all duration-200 ease-in-out"
           : ""
       } fill-none`}
     >
@@ -144,7 +144,7 @@ export const NavArrowDown = ({
           : "stroke-light_text dark:stroke-dark_text"
       } ${
         hover
-          ? "group-hover:stroke-primary_hover transition-all ease-in duration-200"
+          ? "group-hover:stroke-primary_hover transition-all duration-200 ease-in-out"
           : ""
       } ${subMenu ? "rotate-180" : "rotate-0"} h-5 fill-none`}
     >
@@ -163,7 +163,7 @@ export const NavArrowRight = ({ hover }: { hover: boolean }) => {
       strokeLinejoin="round"
       className={`${
         hover
-          ? "group-hover:stroke-primary transition-all ease-in duration-200"
+          ? "group-hover:stroke-primary transition-all duration-200 ease-in-out"
           : ""
       } h-5 stroke-light_text dark:stroke-dark_text fill-none`}
     >
@@ -182,7 +182,7 @@ export const BookCode = ({ hover }: { hover: boolean }) => {
       strokeLinejoin="round"
       className={`${
         hover
-          ? "group-hover:stroke-primary transition-all ease-in duration-200"
+          ? "group-hover:stroke-primary transition-all duration-200 ease-in-out"
           : ""
       } h-5 stroke-light_text dark:stroke-dark_text fill-none`}
     >
@@ -207,7 +207,7 @@ export const Code = ({ hover }: { hover: boolean }) => {
       strokeLinejoin="round"
       className={`${
         hover
-          ? "group-hover:stroke-primary transition-all ease-in duration-200"
+          ? "group-hover:stroke-primary transition-all duration-200 ease-in-out"
           : ""
       } h-5 stroke-light_text dark:stroke-dark_text fill-none`}
     >
@@ -228,7 +228,7 @@ export const Formation = ({ hover }: { hover: boolean }) => {
       strokeLinejoin="round"
       className={`${
         hover
-          ? "group-hover:stroke-primary transition-all ease-in duration-200"
+          ? "group-hover:stroke-primary transition-all duration-200 ease-in-out"
           : ""
       } h-5 stroke-light_text dark:stroke-dark_text fill-none`}
     >
@@ -248,7 +248,7 @@ export const Services = ({ hover }: { hover: boolean }) => {
       strokeLinejoin="round"
       className={`${
         hover
-          ? "group-hover:stroke-primary transition-all ease-in duration-200"
+          ? "group-hover:stroke-primary transition-all duration-200 ease-in-out"
           : ""
       } h-5 stroke-light_text dark:stroke-dark_text fill-none`}
     >
@@ -268,7 +268,7 @@ export const Contact = ({ hover }: { hover: boolean }) => {
       strokeLinejoin="round"
       className={`${
         hover
-          ? "group-hover:stroke-primary transition-all ease-in duration-200"
+          ? "group-hover:stroke-primary transition-all duration-200 ease-in-out"
           : ""
       } h-5 stroke-light_text dark:stroke-dark_text fill-none`}
     >
@@ -288,7 +288,7 @@ export const Sun = ({ hover }: { hover: boolean }) => {
       strokeLinejoin="round"
       className={`${
         hover
-          ? "group-hover:stroke-primary transition-all ease-in duration-200"
+          ? "group-hover:stroke-primary transition-all duration-200 ease-in-out"
           : ""
       } h-5 stroke-light_text dark:stroke-dark_text fill-none`}
     >
@@ -315,7 +315,7 @@ export const Moon = ({ hover }: { hover: boolean }) => {
       strokeLinejoin="round"
       className={`${
         hover
-          ? "group-hover:stroke-primary transition-all ease-in duration-200"
+          ? "group-hover:stroke-primary transition-all duration-200 ease-in-out"
           : ""
       } h-5 stroke-light_text dark:stroke-dark_text fill-none`}
     >
@@ -331,7 +331,7 @@ export const LinkedIn = ({ hover = false }: { hover?: boolean }) => {
       xmlns="http://www.w3.org/2000/svg"
       className={`${
         hover
-          ? "group-hover:fill-primary transition-all ease-in duration-200"
+          ? "group-hover:fill-primary transition-all duration-200 ease-in-out"
           : ""
       } h-5 fill-dark_text`}
     >
@@ -354,7 +354,7 @@ export const GitHub = ({ hover = false }: { hover?: boolean }) => {
       xmlns="http://www.w3.org/2000/svg"
       className={`${
         hover
-          ? "group-hover:fill-primary transition-all ease-in duration-200"
+          ? "group-hover:fill-primary transition-all duration-200 ease-in-out"
           : ""
       } h-5 fill-dark_text`}
     >
@@ -381,7 +381,7 @@ export const Gmail = ({ hover = false }: { hover?: boolean }) => {
           strokeLinejoin="round"
           className={`${
             hover
-              ? "group-hover:stroke-primary transition-all ease-in duration-200"
+              ? "group-hover:stroke-primary transition-all duration-200 ease-in-out"
               : ""
           } h-5 stroke-dark_text fill-none`}
         />
@@ -391,7 +391,7 @@ export const Gmail = ({ hover = false }: { hover?: boolean }) => {
           <rect
             className={`${
               hover
-                ? "group-hover:fill-primary transition-all ease-in duration-200"
+                ? "group-hover:fill-primary transition-all duration-200 ease-in-out"
                 : ""
             } h-5 w-full fill-dark_text`}
           />

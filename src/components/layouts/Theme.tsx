@@ -24,12 +24,12 @@ const Theme = () => {
 
   return (
     <button
-      className="group py-2 transition-all ease-in duration-300 w-full md:block"
+      className="group py-2 w-full md:block transition-all duration-200 ease-in-out"
       onClick={handleChangeTheme}
     >
       <div className="flex items-center gap-3">
         {theme === "dark" ? <Moon hover={true} /> : <Sun hover={true} />}
-        <span className="h-5 text-base font-semibold dark:text-dark_text group-hover:text-primary_hover transition-all ease-in duration-200">
+        <span className="h-5 text-base font-semibold dark:text-dark_text group-hover:text-primary_hover transition-all duration-200 ease-in-out">
           {theme === "dark" ? "Oscuro" : "Claro"}
         </span>
       </div>

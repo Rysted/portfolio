@@ -19,7 +19,7 @@ const Home = () => {
             href="https://www.linkedin.com/in/marcelo-sebastian-suarez"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-x-2 bg-primary text-dark_text px-3 py-1 rounded-full hover:bg-primary_hover hover:scale-110 transition-all duration-300 ease-in-out"
+            className="flex items-center gap-x-2 bg-primary text-dark_text px-3 py-1 rounded-full hover:bg-primary_hover hover:scale-110  transition-all duration-200 ease-in-out"
           >
             <LinkedIn />
             <span>LinkedIn</span>
@@ -28,7 +28,7 @@ const Home = () => {
             href="https://github.com/Rysted"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-x-2 bg-primary text-dark_text px-3 py-1 rounded-full hover:bg-primary_hover hover:scale-110 transition-all duration-300 ease-in-out"
+            className="flex items-center gap-x-2 bg-primary text-dark_text px-3 py-1 rounded-full hover:bg-primary_hover hover:scale-110  transition-all duration-200 ease-in-out"
           >
             <GitHub />
             <span>GitHub</span>
@@ -37,7 +37,7 @@ const Home = () => {
             href="mailto:rysted.dev@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-x-2 bg-primary text-dark_text px-3 py-1 rounded-full hover:bg-primary_hover hover:scale-110 transition-all duration-300 ease-in-out"
+            className="flex items-center gap-x-2 bg-primary text-dark_text px-3 py-1 rounded-full hover:bg-primary_hover hover:scale-110  transition-all duration-200 ease-in-out"
           >
             <Gmail />
             <span>Gmail</span>
