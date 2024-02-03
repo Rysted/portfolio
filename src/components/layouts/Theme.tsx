@@ -26,6 +26,7 @@ const Theme = () => {
     <button
       className="group py-2 w-full md:block transition-all duration-200 ease-in-out"
       onClick={handleChangeTheme}
+      aria-label="Cambiar tema del sitio web"
     >
       <div className="flex items-center gap-3">
         {theme === "dark" ? <Moon hover={true} /> : <Sun hover={true} />}

@@ -1,5 +1,5 @@
 import MenuItem from "../common/MenuItem";
-import SubMenu from "../common/SubMenu";
+import SubMenu from "./SubMenu";
 import Theme from "./Theme";
 
 // Icons

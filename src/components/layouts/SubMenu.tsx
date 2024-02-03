@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import MenuItem from "./MenuItem";
+import MenuItem from "../common/MenuItem";
 
 // Icons
 import {
@@ -23,6 +23,7 @@ const SubMenu = () => {
       <button
         className="group flex justify-between w-full py-2 transition-all duration-200 ease-in-out"
         onClick={toggleSubMenu}
+        aria-label="Abrir submenú de Sobre mí"
       >
         <div className="flex items-center gap-x-3">
           <AboutMe hover={true} subMenu={subMenu} />
