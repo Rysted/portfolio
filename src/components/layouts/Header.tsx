@@ -30,7 +30,7 @@ const Header = () => {
       <div
         className={`bg-light_background dark:bg-dark_background fixed ${
           isOpenMenu ? "right-0" : "-right-56"
-        } top-20 md:right-0 md:top-0 w-52 h-screen flex-col justify-start px-0 font-poppins shadow-light_left transition-all duration-500 ease-in-out z-10`}
+        } top-20 md:right-0 md:top-0 w-52 h-screen flex-col justify-start px-0 font-poppins shadow-light_left transition-all duration-200 ease-in-out z-10`}
       >
         <div className="opacity-0 w-0 h-0 my-0 md:w-auto md:h-auto md:opacity-100 md:mt-8 md:mb-5 flex justify-center items-center">
           <LogoTipo />
