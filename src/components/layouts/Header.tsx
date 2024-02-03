@@ -30,7 +30,7 @@ const Header = () => {
 
   return (
     <header className="relative overflow-x-hidden">
-      <div className="md:hidden fixed top-0 w-full h-20 flex justify-between p-5 bg-light_background dark:bg-dark_background shadow-light_bottom z-10">
+      <div className="md:hidden fixed top-0 w-full h-20 flex justify-between px-5 bg-light_background dark:bg-dark_background shadow-light_bottom z-10">
         <img
           src="./logotipo.png"
           alt="Icono del logotipo"
@@ -39,9 +39,9 @@ const Header = () => {
         <Menu isOpenMenu={isOpenMenu} toggleSidebar={toggleSidebar} />
       </div>
       <span
-        className={`${
-          isOpenMenu ? "fixed" : "hidden"
-        } md:hidden w-full h-svh overflow-y-scroll bg-dark_background dark:bg-light_background opacity-30 cursor-pointer`}
+        className={`fixed cursor-pointer ${
+          isOpenMenu ? " opacity-30" : "opacity-0 pointer-events-none"
+        } md:hidden w-full h-svh overflow-y-scroll bg-dark_background dark:bg-light_background ease-linear transition-all duration-300`}
         onClick={toggleSidebar}
       ></span>
       <div
@@ -60,9 +60,9 @@ const Header = () => {
         <nav className="md:block h-svh overflow-x-auto pb-24">
           <ul className="flex flex-col gap-y-2 px-6">
             <li>
-              <a href="#home" className="group flex gap-x-3 py-2">
+              <a href="#home" className="group flex items-center gap-x-3 py-2">
                 <Home hover={true} />
-                <span className="text-base font-semibold dark:text-dark_text group-hover:text-primary transition-all ease-in duration-200">
+                <span className="h-5 text-base font-semibold dark:text-dark_text group-hover:text-primary_hover transition-all ease-in duration-200">
                   Inicio
                 </span>
               </a>
@@ -72,9 +72,13 @@ const Header = () => {
                 className="group flex justify-between w-full py-2 transition-all ease-in duration-200"
                 onClick={toggleSubMenu}
               >
-                <div className="flex gap-x-3">
-                  <AboutMe hover={true} />
-                  <span className="text-base font-semibold dark:text-dark_text group-hover:text-primary transition-all ease-in duration-200">
+                <div className="flex items-center gap-x-3">
+                  <AboutMe hover={true} subMenu={subMenu} />
+                  <span
+                    className={`max-h-5 text-base font-semibold  ${
+                      subMenu ? "text-primary" : "dark:text-dark_text"
+                    } group-hover:text-primary_hover transition-all ease-in duration-200`}
+                  >
                     Sobre mí
                   </span>
                 </div>
@@ -87,19 +91,19 @@ const Header = () => {
               >
                 <a href="#skills" className="group flex gap-x-3">
                   <BookCode hover={true} />
-                  <span className="text-base font-medium text-light_text_secondary dark:text-dark_text group-hover:text-primary transition-all ease-in duration-200">
+                  <span className="text-base font-medium text-light_text_secondary dark:text-dark_text group-hover:text-primary_hover transition-all ease-in duration-200">
                     Habilidades
                   </span>
                 </a>
                 <a href="#projects" className="group flex gap-x-3">
                   <Code hover={true} />
-                  <span className="text-base font-medium text-light_text_secondary dark:text-dark_text group-hover:text-primary transition-all ease-in duration-200">
+                  <span className="text-base font-medium text-light_text_secondary dark:text-dark_text group-hover:text-primary_hover transition-all ease-in duration-200">
                     Proyectos
                   </span>
                 </a>
                 <a href="#formation" className="group flex gap-x-3">
                   <Formation hover={true} />
-                  <span className="text-base font-medium text-light_text_secondary dark:text-dark_text group-hover:text-primary transition-all ease-in duration-200">
+                  <span className="text-base font-medium text-light_text_secondary dark:text-dark_text group-hover:text-primary_hover transition-all ease-in duration-200">
                     Fromación
                   </span>
                 </a>
@@ -111,7 +115,7 @@ const Header = () => {
                 className="group flex gap-x-3 py-2 transition-all ease-in duration-300"
               >
                 <Services hover={true} />
-                <span className="text-base font-semibold dark:text-dark_text group-hover:text-primary transition-all ease-in duration-200">
+                <span className="text-base font-semibold dark:text-dark_text group-hover:text-primary_hover transition-all ease-in duration-200">
                   Servicios
                 </span>
               </a>
@@ -122,7 +126,7 @@ const Header = () => {
                 className="group flex gap-x-3 py-2 transition-all ease-in duration-300"
               >
                 <Contact hover={true} />
-                <span className="text-base font-semibold dark:text-dark_text group-hover:text-primary transition-all ease-in duration-200">
+                <span className="text-base font-semibold dark:text-dark_text group-hover:text-primary_hover transition-all ease-in duration-200">
                   Contacto
                 </span>
               </a>

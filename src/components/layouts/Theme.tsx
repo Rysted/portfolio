@@ -27,9 +27,9 @@ const Theme = () => {
       className="group py-2 transition-all ease-in duration-300 w-full md:block"
       onClick={handleChangeTheme}
     >
-      <div className="flex gap-3">
+      <div className="flex items-center gap-3">
         {theme === "dark" ? <Moon hover={true} /> : <Sun hover={true} />}
-        <span className="text-base font-semibold dark:text-dark_text group-hover:text-primary transition-all ease-in duration-200">
+        <span className="h-5 text-base font-semibold dark:text-dark_text group-hover:text-primary_hover transition-all ease-in duration-200">
           {theme === "dark" ? "Oscuro" : "Claro"}
         </span>
       </div>
