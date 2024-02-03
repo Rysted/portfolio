@@ -372,31 +372,24 @@ export const GitHub = ({ hover = false }: { hover?: boolean }) => {
 
 export const Gmail = ({ hover = false }: { hover?: boolean }) => {
   return (
-    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" className="h-5">
-      <g clipPath="url(#clip0_170_356)">
-        <path
-          d="M12 18H5C4.46957 18 3.96086 17.7893 3.58579 17.4142C3.21071 17.0391 3 16.5304 3 16V6M3 6C3 5.46957 3.21071 4.96086 3.58579 4.58579C3.96086 4.21071 4.46957 4 5 4H19C19.5304 4 20.0391 4.21071 20.4142 4.58579C20.7893 4.96086 21 5.46957 21 6M3 6L12 12L21 6M21 6V13.5M15 18H21M21 18L18 15M21 18L18 21"
-          strokeWidth="2"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          className={`${
-            hover
-              ? "group-hover:stroke-primary transition-all duration-200 ease-in-out"
-              : ""
-          } h-5 stroke-dark_text fill-none`}
-        />
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 49.4 512 399.4200000000001"
+      className={`${
+        hover
+          ? "group-hover:fill-primary transition-all duration-200 ease-in-out"
+          : ""
+      } h-3 w-full fill-dark_text`}
+    >
+      <g>
+        <g>
+          <path d="M34.91 448.818h81.454V251L0 163.727V413.91c0 19.287 15.622 34.91 34.91 34.91z" />
+          <path d="M395.636 448.818h81.455c19.287 0 34.909-15.622 34.909-34.909V163.727L395.636 251z" />
+          <path d="M395.636 99.727V251L512 163.727v-46.545c0-43.142-49.25-67.782-83.782-41.891z" />
+        </g>
+        <path d="M116.364 251V99.727L256 204.455 395.636 99.727V251L256 355.727z" />
+        <path d="M0 117.182v46.545L116.364 251V99.727L83.782 75.291C49.25 49.4 0 74.04 0 117.18z" />
       </g>
-      <defs>
-        <clipPath id="clip0_170_356">
-          <rect
-            className={`${
-              hover
-                ? "group-hover:fill-primary transition-all duration-200 ease-in-out"
-                : ""
-            } h-5 w-full fill-dark_text`}
-          />
-        </clipPath>
-      </defs>
     </svg>
   );
 };

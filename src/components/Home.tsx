@@ -40,6 +40,7 @@ const Home = () => {
             className="flex items-center gap-x-2 bg-primary text-dark_text px-3 py-1 rounded-full hover:bg-primary_hover hover:scale-110  transition-all duration-200 ease-in-out"
           >
             <Gmail />
+
             <span>Gmail</span>
           </a>
         </nav>
