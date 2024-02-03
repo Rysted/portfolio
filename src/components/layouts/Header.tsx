@@ -30,7 +30,7 @@ const Header = () => {
   };
 
   return (
-    <header className="relative overflow-x-hidden">
+    <header className="relative overflow-x-hidden select-none">
       <div className="md:hidden fixed top-0 w-full h-20 flex justify-between items-center px-5 bg-light_background dark:bg-dark_background shadow-light_bottom z-10">
         <LogoTipo />
         <Menu isOpenMenu={isOpenMenu} toggleSidebar={toggleSidebar} />
