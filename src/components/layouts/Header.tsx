@@ -5,6 +5,7 @@ import Theme from "./Theme";
 
 // Icons
 import {
+  LogoTipo,
   Home,
   AboutMe,
   NavArrowDown,
@@ -30,18 +31,14 @@ const Header = () => {
 
   return (
     <header className="relative overflow-x-hidden">
-      <div className="md:hidden fixed top-0 w-full h-20 flex justify-between px-5 bg-light_background dark:bg-dark_background shadow-light_bottom z-10">
-        <img
-          src="./logotipo.png"
-          alt="Icono del logotipo"
-          className="w-10 my-auto dark:invert"
-        />
+      <div className="md:hidden fixed top-0 w-full h-20 flex justify-between items-center px-5 bg-light_background dark:bg-dark_background shadow-light_bottom z-10">
+        <LogoTipo />
         <Menu isOpenMenu={isOpenMenu} toggleSidebar={toggleSidebar} />
       </div>
       <span
         className={`fixed cursor-pointer ${
-          isOpenMenu ? " opacity-30" : "opacity-0 pointer-events-none"
-        } md:hidden w-full h-svh overflow-y-scroll bg-dark_background dark:bg-light_background ease-linear transition-all duration-300`}
+          isOpenMenu ? " opacity-30 blur-md" : "opacity-0 pointer-events-none"
+        }  md:hidden w-full h-svh overflow-y-scroll bg-dark_background dark:bg-light_background ease-linear transition-all duration-300`}
         onClick={toggleSidebar}
       ></span>
       <div
@@ -49,12 +46,8 @@ const Header = () => {
           isOpenMenu ? "right-0" : "-right-56"
         } top-20 md:right-0 md:top-0 w-52 h-screen flex-col justify-start px-0 font-poppins shadow-light_left ease-linear transition-all duration-300 z-10`}
       >
-        <div className="flex justify-end">
-          <img
-            src="./logotipo.png"
-            alt="Icono del logotipo"
-            className={`opacity-0 w-0 my-0 md:opacity-100 md:w-10 md:my-8 md:mx-auto md:mb-5 md:block dark:invert`}
-          />
+        <div className="opacity-0 w-0 h-0 my-0 md:w-auto md:h-auto md:opacity-100 md:mt-8 mb-5 flex justify-center items-center">
+          <LogoTipo />
         </div>
 
         <nav className="md:block h-svh overflow-x-auto pb-24">
