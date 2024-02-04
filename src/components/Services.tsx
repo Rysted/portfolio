@@ -1,20 +1,22 @@
+import ServiceCard from "./common/ServiceCard";
+
+// Icons
 import {
   ServicesIcon,
   Responsive,
   Optimization,
   Maintenance,
 } from "../Icons/Icons";
-import ServiceCard from "./common/ServiceCard";
 
 const Services = () => {
   return (
     <section
       id="services"
-      className="select-none md:max-w-[800px] mx-auto pt-2 pb-20"
+      className="px-5 py-20 select-none md:max-w-[800px] mx-auto"
     >
       <header className="flex justify-start items-center gap-x-2">
         <ServicesIcon height="h-8" />
-        <h2 className="text-3xl font-bold">Services</h2>
+        <h2 className="text-3xl font-bold">Servicios</h2>
       </header>
       <div className="pt-10">
         <article className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 w-full">

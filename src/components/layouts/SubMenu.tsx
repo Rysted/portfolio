@@ -6,9 +6,9 @@ import MenuItem from "../common/MenuItem";
 import {
   AboutMe,
   NavArrowDown,
+  CodeIcon,
   BookCode,
   Formation,
-  Code,
 } from "../../Icons/Icons";
 
 const SubMenu = () => {
@@ -43,7 +43,7 @@ const SubMenu = () => {
         } px-2 overflow-hidden flex flex-col justify-between bg-light_background dark:bg-dark_background rounded-xl transition-all duration-200 ease-in-out`}
       >
         <MenuItem url="#projects" text="Proyectos">
-          <Code hover={true} />
+          <CodeIcon hover={true} />
         </MenuItem>
         <MenuItem url="#skills" text="Habilidades">
           <BookCode hover={true} />
