@@ -19,7 +19,7 @@ export const ProjectInfo = [
   },
   {
     image: "mrcoffee.webp",
-    title: "MrCoffee",
+    title: "MrCoffee - MPA",
     description:
       "MrCoffee: Un e-commerce especializado en café y alimentos de alta calidad. Es un sitio web diseñado para todas las plataformas. Se ofrece a los clientes la opción de pago en línea y recolección en tienda.",
     tags: [
