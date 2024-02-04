@@ -5,9 +5,9 @@ const Home = () => {
   return (
     <section
       id="home"
-      className="flex justify-center items-center h-screen pt-5 select-none"
+      className="flex justify-center items-center h-screen pt-5 select-none md:max-w-[800px] mx-auto"
     >
-      <article className="max-w-[500px] md:max-w-[660px]">
+      <article className="max-w-[500px] md:max-w-full">
         <h1 className="text-4xl md:text-5xl">
           ¡Hola! Soy <b className="text-primary">Rysted</b>,
         </h1>

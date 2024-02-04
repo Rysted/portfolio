@@ -3,7 +3,7 @@ import SubMenu from "./SubMenu";
 import Theme from "./Theme";
 
 // Icons
-import { Home, Services } from "../../Icons/Icons";
+import { Home, ServicesIcon } from "../../Icons/Icons";
 
 const NavMenu = () => {
   return (
@@ -16,7 +16,7 @@ const NavMenu = () => {
         </li>
         <li>
           <MenuItem url="#services" text="Servicios">
-            <Services hover={true} />
+            <ServicesIcon hover={true} />
           </MenuItem>
         </li>
         <li>
