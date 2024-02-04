@@ -37,4 +37,22 @@ export const ProjectInfo = [
     code: "https://github.com/Rysted/grupo_5_MrCoffee",
     demo: "",
   },
+  {
+    image: "portfolioExample.webp",
+    title: "Portfolio Example",
+    description:
+      "Este repositorio contiene el código fuente de mi antiguo portafolio web. Aunque ya no está en uso, decidí mantener este repositorio como referencia y para compartir mi progreso a lo largo del tiempo.",
+    tags: ["HTML", "CSS", "JavaScript", "React"],
+    code: "https://github.com/Rysted/old-portfolio",
+    demo: "https://stellular-creponne-a706db.netlify.app/",
+  },
+  {
+    image: "mouseReact.webp",
+    title: "Mouse events",
+    description:
+      "Este proyecto de React+Vite presenta un controlador de mouse interactivo con animaciones y efectos visuales.",
+    tags: ["HTML", "CSS", "JavaScript", "React"],
+    code: "https://github.com/Rysted/mouse-events",
+    demo: "https://mouse-react.netlify.app/",
+  },
 ];

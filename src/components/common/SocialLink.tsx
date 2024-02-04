@@ -1,4 +1,4 @@
-const Link = ({
+const SocialLink = ({
   url,
   children,
   text,
@@ -24,4 +24,4 @@ const Link = ({
   );
 };
 
-export default Link;
+export default SocialLink;

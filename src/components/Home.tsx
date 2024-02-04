@@ -1,5 +1,5 @@
 import { LinkedIn, GitHub, Gmail, WhatsApp } from "../Icons/Icons";
-import Link from "./common/Link";
+import SocialLink from "./common/SocialLink";
 
 const Home = () => {
   return (
@@ -19,27 +19,27 @@ const Home = () => {
         </p>
 
         <nav className="flex flex-wrap justify-start gap-2 md:gap-5 mt-5">
-          <Link
+          <SocialLink
             url="https://www.linkedin.com/in/marcelo-sebastian-suarez"
             text="LinkedIn"
           >
             <LinkedIn />
-          </Link>
+          </SocialLink>
 
-          <Link url="https://github.com/Rysted" text="GitHub">
+          <SocialLink url="https://github.com/Rysted" text="GitHub">
             <GitHub />
-          </Link>
+          </SocialLink>
 
-          <Link url="mailto:rysted.dev@gmail.com" text="Gmail">
+          <SocialLink url="mailto:rysted.dev@gmail.com" text="Gmail">
             <Gmail />
-          </Link>
+          </SocialLink>
 
-          <Link
+          <SocialLink
             url="https://wa.me/+541157347309?text=Hola%20Rysted,%20me%20interesaría%20contratar%20tus%20servicios.%20%0A¿Podemos%20hablar%20más%20al%20respecto?"
             text="WhatsApp"
           >
             <WhatsApp />
-          </Link>
+          </SocialLink>
         </nav>
       </article>
     </section>
