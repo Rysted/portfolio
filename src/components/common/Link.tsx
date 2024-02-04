@@ -1,4 +1,4 @@
-const SocialLink = ({
+const Link = ({
   url,
   children,
   text,
@@ -13,7 +13,7 @@ const SocialLink = ({
         href={url}
         target="_blank"
         rel="noopener noreferrer"
-        aria-label="Ir a {text}"
+        aria-label={`Ir a ${text}`}
         title={`Ir a ${text}`}
         className="flex items-center gap-x-2 bg-primary text-dark_text px-3 py-1 rounded-full hover:bg-primary_hover hover:scale-110 transition-all duration-200 ease-in-out"
       >
@@ -24,4 +24,4 @@ const SocialLink = ({
   );
 };
 
-export default SocialLink;
+export default Link;

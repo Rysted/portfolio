@@ -13,7 +13,7 @@ const Header = () => {
   };
 
   useEffect(() => {
-    const mdBreakpoint = 768;
+    const mdBreakpoint: number = 768;
 
     const handleResize = () => {
       if (window.innerWidth >= mdBreakpoint) {
@@ -36,7 +36,7 @@ const Header = () => {
 
   return (
     <header className="relative overflow-x-hidden select-none">
-      <div className="md:hidden fixed top-0 w-full h-20 flex justify-between items-center px-5 bg-light_highlight dark:bg-dark_highlight transition-all duration-200 ease-in-out shadow-light_bottom dark:shadow-dark_bottom z-10">
+      <div className="md:hidden fixed z-20 top-0 w-full h-20 flex justify-between items-center px-5 bg-light_highlight dark:bg-dark_highlight transition-all duration-200 ease-in-out shadow-light_bottom dark:shadow-dark_bottom">
         <LogoTipo />
         <button
           onClick={toggleSidebar}
@@ -47,7 +47,7 @@ const Header = () => {
         </button>
       </div>
       <span
-        className={`fixed cursor-pointer ${
+        className={`fixed z-10 cursor-pointer ${
           isOpenMenu ? " opacity-30 blur-md" : "opacity-0 pointer-events-none"
         }  md:hidden w-full h-svh overflow-y-scroll bg-dark_background dark:bg-light_background transition-all duration-200 ease-in-out`}
         onClick={toggleSidebar}

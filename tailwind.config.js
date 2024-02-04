@@ -13,7 +13,8 @@ export default {
         primary_dark: "#6D72FF",
 
         light_text: "#000000",
-        light_text_secondary: "#333333",
+        light_text_secondary: "#555555",
+        light_text_tertiary: "#919FB4",
         light_background: "#F3F6FD",
         light_highlight: "#FFFFFF",
 
