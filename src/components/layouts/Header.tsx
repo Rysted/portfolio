@@ -17,18 +17,16 @@ const Header = () => {
 
     const handleResize = () => {
       if (window.innerWidth >= mdBreakpoint) {
-        // Si la resolución es mayor o igual a mdBreakpoint, permitir el desplazamiento
         document.body.style.overflowY = "scroll";
       } else {
-        // Si la resolución es menor a mdBreakpoint, ajustar según el estado del menú
         document.body.style.overflowY = isOpenMenu ? "hidden" : "scroll";
       }
     };
 
-    // Agregar un event listener para el cambio de tamaño de la ventana
+    handleResize();
+
     window.addEventListener("resize", handleResize);
 
-    // Limpieza al desmontar el componente
     return () => {
       window.removeEventListener("resize", handleResize);
     };
