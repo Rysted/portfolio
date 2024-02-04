@@ -40,7 +40,7 @@ const SubMenu = () => {
       <div
         className={`${
           subMenu ? "h-28" : "h-0"
-        } px-2 overflow-hidden flex flex-col justify-between bg-light_highlight dark:bg-dark_highlight rounded transition-all duration-200 ease-in-out`}
+        } px-2 overflow-hidden flex flex-col justify-between bg-light_background dark:bg-dark_background rounded-xl transition-all duration-200 ease-in-out`}
       >
         <MenuItem url="#projects" text="Proyectos">
           <Code hover={true} />

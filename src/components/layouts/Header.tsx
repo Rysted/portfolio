@@ -38,7 +38,11 @@ const Header = () => {
     <header className="relative overflow-x-hidden select-none">
       <div className="md:hidden fixed top-0 w-full h-20 flex justify-between items-center px-5 bg-light_highlight dark:bg-dark_highlight transition-all duration-200 ease-in-out shadow-light_bottom dark:shadow-dark_bottom z-10">
         <LogoTipo />
-        <button onClick={toggleSidebar} className="group">
+        <button
+          onClick={toggleSidebar}
+          className="group"
+          aria-label="Abrir menú"
+        >
           <Burger isOpenMenu={isOpenMenu} hover={true} />
         </button>
       </div>

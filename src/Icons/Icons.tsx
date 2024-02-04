@@ -445,9 +445,9 @@ export const Maintenance = ({ height }: { height?: string }) => {
     <svg
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
-      stroke-width="1.5"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
       className={`${
         height ? height : "h-5"
       } stroke-light_text dark:stroke-dark_text fill-none`}
