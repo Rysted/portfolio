@@ -26,21 +26,21 @@ const Services = () => {
           title="Diseño único y adaptable a todos los dispositivos"
           subTitle="Creo sitios web únicos y flexibles, diseñados para destacar la identidad de tu marca."
         >
-          <Responsive height="h-14" />
+          <Responsive />
         </ServiceCard>
 
         <ServiceCard
           title="Optimización para motores de búsqueda (SEO)"
           subTitle="Elevo tu presencia en línea mediante estrategias de SEO para aumentar tu visibilidad en internet."
         >
-          <Optimization height="h-14" />
+          <Optimization />
         </ServiceCard>
 
         <ServiceCard
           title="Mantenimiento, soporte y soluciones personalizadas"
           subTitle="Brindo servicios de mantenimiento, soporte técnico y soluciones personalizadas."
         >
-          <Maintenance height="h-14" />
+          <Maintenance />
         </ServiceCard>
       </article>
     </section>
