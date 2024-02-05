@@ -14,11 +14,11 @@ const Footer = () => {
             url="https://www.linkedin.com/in/marcelo-sebastian-suarez"
             text="LinkedIn"
           >
-            <LinkedIn hover={true} styles="w-6 h-6" />
+            <LinkedIn hover={true} styles="w-6 h-6 fill-light_text" />
           </IconLink>
 
           <IconLink url="https://github.com/Rysted" text="GitHub">
-            <GitHub hover={true} styles="w-6 h-6" />
+            <GitHub hover={true} styles="w-6 h-6 fill-light_text" />
           </IconLink>
         </div>
 
