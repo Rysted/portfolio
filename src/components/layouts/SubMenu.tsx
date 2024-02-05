@@ -21,7 +21,7 @@ const SubMenu = ({ closeSidebar }: { closeSidebar: () => void }) => {
   return (
     <>
       <button
-        className="group flex justify-between w-full py-2 transition-all duration-200 ease-in-out"
+        className="group flex justify-between items-center w-full py-2 transition-all duration-200 ease-in-out"
         onClick={toggleSubMenu}
         aria-label="Abrir submenú de Sobre mí"
       >

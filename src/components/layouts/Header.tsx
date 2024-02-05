@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import NavMenu from "./NavMenu";
 
 // Icons
-import { LogoTipo, Burger } from "../../Icons/Icons";
+import { LogoTipo, Burger, Close } from "../../Icons/Icons";
 
 const Header = () => {
   const [isOpenMenu, setIsOpenMenu] = useState<boolean>(false);
@@ -45,7 +45,7 @@ const Header = () => {
           className="group"
           aria-label="Abrir menú"
         >
-          <Burger isOpenMenu={isOpenMenu} hover={true} />
+          {isOpenMenu ? <Close hover={true} /> : <Burger hover={true} />}
         </button>
       </div>
       <span
