@@ -49,7 +49,7 @@ const NavMenu = ({ closeSidebar }: { closeSidebar: () => void }) => {
         <li>
           <MenuItem
             url="#formation"
-            text="Fromación"
+            text="Formación"
             closeSidebar={closeSidebar}
           >
             <Formation hover={true} />
