@@ -20,6 +20,8 @@ const ProjectsCard = ({
           src={`./projects/${image}`}
           alt="Imagen de MrCoffee"
           loading="lazy"
+          width="100%"
+          height="100%"
           className="block h-56 rounded-[25px] object-cover p-4"
         />
       </div>

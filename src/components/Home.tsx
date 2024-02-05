@@ -11,10 +11,10 @@ const Home = () => {
         <h1 className="text-4xl md:text-5xl text-light_text dark:text-dark_text transition-all duration-200 ease-in-out">
           ¡Hola! Soy <b className="text-primary">Rysted</b>,
         </h1>
-        <b className="text-2xl md:text-3xl text-primary block pt-5">
+        <b className="text-2xl text-primary block pt-5">
           Desarrollador Web Full Stack
         </b>
-        <p className="text-1xl md:text-2xl text-light_text dark:text-dark_text transition-all duration-200 ease-in-out">
+        <p className="text-sm md:text-lg text-light_text dark:text-dark_text transition-all duration-200 ease-in-out">
           Creador de soluciones digitales para empresas y emprendedores.
         </p>
 
