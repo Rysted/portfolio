@@ -9,7 +9,7 @@ export const SkillsData = [
   { title: "Diseño", skills: ["Figma", "Miro"] },
   {
     title: "Herramientas",
-    skills: ["Postman", "Prepros", "Jira", "Git", "Github"],
+    skills: ["Postman", "Prepros", "Jira", "Trello", "Git", "Github"],
   },
   { title: "Idiomas", skills: ["Inglés (lectura)", "Español (nativo)"] },
 ];

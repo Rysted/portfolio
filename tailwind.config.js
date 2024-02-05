@@ -15,12 +15,12 @@ export default {
         light_text: "#000000",
         light_text_secondary: "#555555",
         light_text_tertiary: "#919FB4",
-        light_background: "#F3F6FD",
-        light_highlight: "#FFFFFF",
+        light_background: "#E5E9F5",
+        light_highlight: "#F5F5F5",
 
         dark_text: "#FFFFFF",
         dark_text_secondary: "#CCCCCC",
-        dark_background: "#000000",
+        dark_background: "#050505",
         dark_highlight: "#212121",
       },
       boxShadow: {
