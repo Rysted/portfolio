@@ -3,7 +3,8 @@ export const LogoTipo = () => {
     <svg
       viewBox="0 0 40 40"
       xmlns="http://www.w3.org/2000/svg"
-      className="h-10 fill-light_text dark:fill-dark_text transition-all duration-200 ease-in-out"
+      height="40px"
+      className="fill-light_text dark:fill-dark_text transition-all duration-200 ease-in-out"
     >
       <path d="M7.29941 21.632V12.6983C7.29941 9.78622 10.1128 10.1318 12.3832 10.1318H25.9071C29.066 10.1318 31.6819 9.63818 31.6326 13.5868L31.5832 18.0289C31.5338 21.5827 31.6326 22.8166 28.0788 23.557C27.1411 23.7544 26.7955 23.9518 26.7955 24.9389V31.0099C26.7955 32.1945 27.5359 32.0958 28.1776 32.0958C30.2999 32.0958 29.8557 28.7395 33.3601 28.7395C35.1863 28.7395 38.0491 29.924 38.0491 32.0958C38.0491 32.6881 37.9997 33.2803 37.8023 33.8726C35.9267 39.4994 33.8537 39.2526 26.3513 39.2526C22.9457 39.2526 19.1945 38.7097 19.1945 35.0079C19.1945 31.5528 19.1451 28.4927 19.1451 25.0377C19.1451 24.4948 18.9971 24.0505 18.4048 24.0505C17.6151 24.0505 17.5657 24.9389 17.5657 25.4819C17.5657 27.2588 17.0721 28.542 16.6773 30.2696C15.6408 34.7117 10.705 39.4007 6.0161 39.4007C3.54823 39.4007 1.91943 38.0186 1.91943 35.4521C1.91943 31.5528 9.71788 30.9112 9.71788 25.6793V23.8037C8.58269 23.8531 7.29941 23.3595 7.29941 21.632ZM25.4629 0.556396C27.7333 0.556396 30.0531 2.67877 31.9781 4.06077C32.8665 4.70242 35.137 6.3806 36.5683 7.71323C37.4074 8.50293 37.6542 9.44074 37.358 10.4772C36.9632 12.0073 35.8773 14.0309 34.3473 14.0309C33.8537 14.0309 33.3108 13.9816 33.1133 13.488C32.8172 11.8593 33.5575 8.70037 27.9308 8.70037H24.4264C22.7483 8.70037 21.465 6.13381 21.465 4.20885C21.465 2.03712 23.5873 0.556396 25.4629 0.556396ZM23.0937 15.9065H16.6279C15.7889 15.9065 15.2953 16.104 15.2953 16.9924C15.2953 17.8315 16.2824 18.0783 16.9735 18.0783H22.9457C24.0315 18.0783 24.5745 17.9302 24.5745 16.7456C24.5745 15.9559 23.6861 15.9065 23.0937 15.9065Z" />
     </svg>
@@ -20,14 +21,15 @@ export const Burger = ({
   return (
     <>
       <svg
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+        height="40px"
         strokeWidth="2"
         strokeLinecap="round"
         strokeLinejoin="round"
-        viewBox="0 0 24 24"
-        xmlns="http://www.w3.org/2000/svg"
         className={`${
           hover && "group-hover:stroke-primary"
-        } w-10 stroke-light_text dark:stroke-dark_text fill-none transition-all duration-200 ease-in-out`}
+        } stroke-light_text dark:stroke-dark_text fill-none transition-all duration-200 ease-in-out`}
       >
         {isOpenMenu ? (
           <>
@@ -51,12 +53,13 @@ export const Close = ({ hover }: { hover: boolean }) => {
     <svg
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
+      height="40px"
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
       className={`${
         hover && "group-hover:stroke-primary"
-      } w-10 md:hidden stroke-light_text dark:stroke-dark_text fill-none transition-all duration-200 ease-in-out`}
+      } md:hidden stroke-light_text dark:stroke-dark_text fill-none transition-all duration-200 ease-in-out`}
     >
       <path d="M6.75827 17.2426L12.0009 12M17.2435 6.75736L12.0009 12M12.0009 12L6.75827 6.75736M12.0009 12L17.2435 17.2426"></path>
     </svg>
@@ -67,10 +70,10 @@ export const Home = ({ hover }: { hover: boolean }) => {
   return (
     <svg
       viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
-      xmlns="http://www.w3.org/2000/svg"
       className={`${
         hover && "group-hover:stroke-primary"
       } h-5 stroke-light_text dark:stroke-dark_text fill-none transition-all duration-200 ease-in-out`}

@@ -12,6 +12,10 @@ const Header = () => {
     setIsOpenMenu(!isOpenMenu);
   };
 
+  const closeSidebar = () => {
+    setIsOpenMenu(false);
+  };
+
   useEffect(() => {
     const mdBreakpoint: number = 768;
 
@@ -47,7 +51,7 @@ const Header = () => {
       <span
         className={`fixed z-10 cursor-pointer ${
           isOpenMenu ? " opacity-30 blur-md" : "opacity-0 pointer-events-none"
-        }  md:hidden w-full h-svh overflow-y-scroll bg-dark_background dark:bg-light_background transition-all duration-200 ease-in-out`}
+        }  md:hidden w-full h-full overflow-y-scroll bg-dark_background dark:bg-light_background transition-all duration-200 ease-in-out`}
         onClick={toggleSidebar}
       ></span>
       <div
@@ -59,7 +63,7 @@ const Header = () => {
           <LogoTipo />
         </div>
 
-        <NavMenu />
+        <NavMenu closeSidebar={closeSidebar} />
       </div>
     </header>
   );

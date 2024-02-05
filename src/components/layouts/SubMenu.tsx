@@ -11,7 +11,7 @@ import {
   Formation,
 } from "../../Icons/Icons";
 
-const SubMenu = () => {
+const SubMenu = ({ closeSidebar }: { closeSidebar: () => void }) => {
   const [subMenu, setSubMenu] = useState<boolean>(false);
 
   const toggleSubMenu = () => {
@@ -42,13 +42,13 @@ const SubMenu = () => {
           subMenu ? "h-28" : "h-0"
         } px-2 overflow-hidden flex flex-col justify-between bg-light_background dark:bg-dark_background rounded-xl transition-all duration-200 ease-in-out`}
       >
-        <MenuItem url="#projects" text="Proyectos">
+        <MenuItem url="#projects" text="Proyectos" closeSidebar={closeSidebar}>
           <CodeIcon hover={true} />
         </MenuItem>
-        <MenuItem url="#skills" text="Habilidades">
+        <MenuItem url="#skills" text="Habilidades" closeSidebar={closeSidebar}>
           <BookCode hover={true} />
         </MenuItem>
-        <MenuItem url="#formation" text="Fromación">
+        <MenuItem url="#formation" text="Fromación" closeSidebar={closeSidebar}>
           <Formation hover={true} />
         </MenuItem>
       </div>

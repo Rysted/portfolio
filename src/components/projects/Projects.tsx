@@ -9,7 +9,7 @@ import { CodeIcon } from "../../Icons/Icons";
 const Projects = () => {
   return (
     <section
-      id="services"
+      id="projects"
       className="px-5 py-20 select-none bg-light_background dark:bg-dark_background transition-all duration-200 ease-in-out"
     >
       <header className="flex justify-start items-center gap-x-2 md:max-w-[800px] mx-auto">
