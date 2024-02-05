@@ -1,9 +1,9 @@
-export const ProjectInfo = [
+export const ProjectData = [
   {
     image: "moon.webp",
     title: "Moon - Backend",
     description:
-      "Moon es un e-commerce de videojuegos, diseñado para ofrecer claves de videojuegos.",
+      "Este proyecto destaca por su enfoque en el desarrollo backend y su utilización de herramientas modernas para ofrecer funcionalidades eficientes y seguras.",
     tags: ["JavaScript", "Express", "MySQL", "Zod", "Multer"],
     code: "https://github.com/Rysted/Moon_backend",
     demo: "",
@@ -21,7 +21,7 @@ export const ProjectInfo = [
     image: "mrcoffee.webp",
     title: "MrCoffee - MPA",
     description:
-      "MrCoffee: Un e-commerce especializado en café y alimentos de alta calidad. Es un sitio web diseñado para todas las plataformas. Se ofrece a los clientes la opción de pago en línea y recolección en tienda.",
+      "MrCoffee: Un e-commerce especializado en café y alimentos de alta calidad. Se ofrece a los clientes la opción de pago en línea y recolección en tienda.",
     tags: [
       "HTML",
       "CSS",
@@ -39,7 +39,7 @@ export const ProjectInfo = [
   },
   {
     image: "portfolioExample.webp",
-    title: "Portfolio Example",
+    title: "Portfolio",
     description:
       "Este repositorio contiene el código fuente de mi antiguo portafolio web. Aunque ya no está en uso, decidí mantener este repositorio como referencia y para compartir mi progreso a lo largo del tiempo.",
     tags: ["HTML", "CSS", "JavaScript", "React"],

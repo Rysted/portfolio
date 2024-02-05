@@ -2,7 +2,7 @@ import Header from "./components/layouts/Header";
 import Home from "./components/Home";
 import Services from "./components/Services";
 import Projects from "./components/projects/Projects";
-import Skills from "./components/Skills";
+import Skills from "./components/skills/Skills";
 import { WavePrimary } from "./Icons/Icons";
 import { useEffect } from "react";
 
@@ -13,7 +13,7 @@ const App = () => {
   return (
     <>
       <Header />
-      <main className="md:mt-0 md:mr-52 font-poppins">
+      <main className="md:mt-0 lg:mr-56 font-poppins">
         <Home />
         <section className="relative bg-light_highlight dark:bg-dark_highlight transition-all duration-200 ease-in-out">
           <span className="block w-full h-2 absolute -top-1 bg-light_highlight dark:bg-dark_highlight transition-all duration-200 ease-in-out"></span>

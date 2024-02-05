@@ -56,8 +56,8 @@ const Header = () => {
       ></span>
       <div
         className={`bg-light_highlight dark:bg-dark_highlight fixed ${
-          isOpenMenu ? "right-0" : "-right-56"
-        } top-20 md:right-0 md:top-0 w-56 h-screen flex-col justify-start px-0 font-poppins shadow-light_left dark:shadow-dark_left transition-all duration-200 ease-in-out z-10`}
+          isOpenMenu ? "right-0" : "-right-60"
+        } top-20 lg:right-0 lg:top-0 w-56 h-screen flex-col justify-start px-0 font-poppins shadow-light_left dark:shadow-dark_left transition-all duration-200 ease-in-out z-10`}
       >
         <div className="opacity-0 w-0 h-0 my-0 md:w-full md:flex md:justify-center md:h-auto md:opacity-100 md:mt-8 md:mb-5">
           <LogoTipo />

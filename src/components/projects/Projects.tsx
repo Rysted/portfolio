@@ -1,25 +1,37 @@
+import { useState } from "react";
+
 import ProjectsCard from "../common/ProjectsCard";
 
 // Data for the projects
-import { ProjectInfo } from "./ProjectInfo.ts";
+import { ProjectData } from "./ProjectData.ts";
 
 // Icons
 import { CodeIcon } from "../../Icons/Icons";
 
 const Projects = () => {
+  const cardsInitially = 4;
+
+  const [visibleCards, setVisibleCards] = useState<number>(cardsInitially);
+
+  const ShowMore = () => {
+    const remainingCards = ProjectData.length - visibleCards;
+    const cardsToAdd = Math.min(cardsInitially, remainingCards);
+    setVisibleCards(visibleCards + cardsToAdd);
+  };
+
   return (
     <section
       id="projects"
       className="px-5 py-20 select-none bg-light_background dark:bg-dark_background transition-all duration-200 ease-in-out"
     >
-      <header className="flex justify-start items-center gap-x-2 md:max-w-[800px] mx-auto">
+      <header className="flex justify-start items-center gap-x-2 md:max-w-[800px] lg:max-w-[1100px] mx-auto">
         <CodeIcon styles="w-8 h-8" />
         <h2 className="text-3xl font-bold text-light_text dark:text-dark_text transition-all duration-200 ease-in-out">
           Proyectos
         </h2>
       </header>
-      <article className="grid grid-cols-1 sm:grid-cols-2 gap-5 max-w-[800px] mx-auto pt-10">
-        {ProjectInfo.map(
+      <article className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 max-w-[800px] lg:max-w-[1100px] mx-auto pt-10">
+        {ProjectData.slice(0, visibleCards).map(
           (
             project: {
               title: string;
@@ -39,10 +51,25 @@ const Projects = () => {
               demo={project.demo}
               image={project.image}
               tags={project.tags}
+              alt={`Imagen de ${project.title}`}
             />
           )
         )}
       </article>
+      {visibleCards < ProjectData.length ? (
+        <button
+          className="mt-20 text-lg block mx-auto text-light_text dark:text-dark_text hover:text-primary dark:hover:text-primary transition-all duration-200 ease-in-out"
+          onClick={ShowMore}
+          aria-label="Mostrar más proyectos"
+          title="Mostrar más proyectos"
+        >
+          Mostrar más
+        </button>
+      ) : (
+        <p className="mt-20 w-max block mx-auto text-light_text_secondary dark:text-dark_text_secondary">
+          No hay más resultados
+        </p>
+      )}
     </section>
   );
 };

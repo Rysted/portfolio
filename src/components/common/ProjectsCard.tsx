@@ -5,6 +5,7 @@ const ProjectsCard = ({
   tags,
   code,
   demo,
+  alt,
 }: {
   image: string;
   title: string;
@@ -12,13 +13,14 @@ const ProjectsCard = ({
   tags: string[];
   code?: string;
   demo?: string;
+  alt: string;
 }) => {
   return (
     <div>
       <div className="bg-primary rounded-t-xl flex justify-center">
         <img
           src={`./projects/${image}`}
-          alt="Imagen de MrCoffee"
+          alt={`Imagen de ${alt}`}
           loading="lazy"
           width="100%"
           height="100%"
@@ -32,17 +34,15 @@ const ProjectsCard = ({
         <p className="text-light_text_secondary dark:text-dark_text_secondary transition-all duration-200 ease-in-out">
           {description}
         </p>
-        <div className="mt-2">
-          <ul className="flex flex-wrap justify-start items-center gap-2">
-            {tags.map((element, index) => (
-              <li
-                key={index}
-                className="py-1 px-2 rounded-lg bg-dark_highlight dark:bg-light_highlight text-dark_text dark:text-light_text transition-all duration-200 ease-in-out"
-              >
-                {element}
-              </li>
-            ))}
-          </ul>
+        <div className="mt-2 flex flex-wrap justify-start items-center gap-2">
+          {tags.map((element, index) => (
+            <span
+              key={index}
+              className="py-1 px-2 rounded-lg bg-light_background dark:bg-dark_background text-light_text dark:text-dark_text transition-all duration-200 ease-in-out"
+            >
+              {element}
+            </span>
+          ))}
         </div>
         <div className="mt-5 flex justify-between">
           {code && (
