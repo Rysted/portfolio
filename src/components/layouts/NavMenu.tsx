@@ -1,9 +1,14 @@
 import MenuItem from "../common/MenuItem";
 import SubMenu from "./SubMenu";
-import Theme from "./Theme";
 
 // Icons
-import { Home, ServicesIcon } from "../../Icons/Icons";
+import {
+  BookCode,
+  CodeIcon,
+  Formation,
+  Home,
+  ServicesIcon,
+} from "../../Icons/Icons";
 
 const NavMenu = ({ closeSidebar }: { closeSidebar: () => void }) => {
   return (
@@ -24,10 +29,34 @@ const NavMenu = ({ closeSidebar }: { closeSidebar: () => void }) => {
           </MenuItem>
         </li>
         <li>
-          <SubMenu closeSidebar={closeSidebar} />
+          <MenuItem
+            url="#projects"
+            text="Proyectos"
+            closeSidebar={closeSidebar}
+          >
+            <CodeIcon hover={true} />
+          </MenuItem>
         </li>
         <li>
-          <Theme />
+          <MenuItem
+            url="#skills"
+            text="Habilidades"
+            closeSidebar={closeSidebar}
+          >
+            <BookCode hover={true} />
+          </MenuItem>
+        </li>
+        <li>
+          <MenuItem
+            url="#formation"
+            text="Fromación"
+            closeSidebar={closeSidebar}
+          >
+            <Formation hover={true} />
+          </MenuItem>
+        </li>
+        <li>
+          <SubMenu />
         </li>
       </ul>
     </nav>

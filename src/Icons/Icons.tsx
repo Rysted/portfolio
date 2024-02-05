@@ -4,14 +4,11 @@ export const LogoTipo = () => {
       width="40"
       height="40"
       viewBox="0 0 40 40"
-      fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      fill="black"
+      className="dark:fill-dark_text transition-all duration-200 ease-in-out"
     >
-      <path
-        d="M7.29941 21.632V12.6983C7.29941 9.78622 10.1128 10.1318 12.3832 10.1318H25.9071C29.066 10.1318 31.6819 9.63818 31.6326 13.5868L31.5832 18.0289C31.5338 21.5827 31.6326 22.8166 28.0788 23.557C27.1411 23.7544 26.7955 23.9518 26.7955 24.9389V31.0099C26.7955 32.1945 27.5359 32.0958 28.1776 32.0958C30.2999 32.0958 29.8557 28.7395 33.3601 28.7395C35.1863 28.7395 38.0491 29.924 38.0491 32.0958C38.0491 32.6881 37.9997 33.2803 37.8023 33.8726C35.9267 39.4994 33.8537 39.2526 26.3513 39.2526C22.9457 39.2526 19.1945 38.7097 19.1945 35.0079C19.1945 31.5528 19.1451 28.4927 19.1451 25.0377C19.1451 24.4948 18.9971 24.0505 18.4048 24.0505C17.6151 24.0505 17.5657 24.9389 17.5657 25.4819C17.5657 27.2588 17.0721 28.542 16.6773 30.2696C15.6408 34.7117 10.705 39.4007 6.0161 39.4007C3.54823 39.4007 1.91943 38.0186 1.91943 35.4521C1.91943 31.5528 9.71788 30.9112 9.71788 25.6793V23.8037C8.58269 23.8531 7.29941 23.3595 7.29941 21.632ZM25.4629 0.556396C27.7333 0.556396 30.0531 2.67877 31.9781 4.06077C32.8665 4.70242 35.137 6.3806 36.5683 7.71323C37.4074 8.50293 37.6542 9.44074 37.358 10.4772C36.9632 12.0073 35.8773 14.0309 34.3473 14.0309C33.8537 14.0309 33.3108 13.9816 33.1133 13.488C32.8172 11.8593 33.5575 8.70037 27.9308 8.70037H24.4264C22.7483 8.70037 21.465 6.13381 21.465 4.20885C21.465 2.03712 23.5873 0.556396 25.4629 0.556396ZM23.0937 15.9065H16.6279C15.7889 15.9065 15.2953 16.104 15.2953 16.9924C15.2953 17.8315 16.2824 18.0783 16.9735 18.0783H22.9457C24.0315 18.0783 24.5745 17.9302 24.5745 16.7456C24.5745 15.9559 23.6861 15.9065 23.0937 15.9065Z"
-        fill="black"
-        className="dark:fill-dark_text transition-all duration-200 ease-in-out"
-      />
+      <path d="M7.29941 21.632V12.6983C7.29941 9.78622 10.1128 10.1318 12.3832 10.1318H25.9071C29.066 10.1318 31.6819 9.63818 31.6326 13.5868L31.5832 18.0289C31.5338 21.5827 31.6326 22.8166 28.0788 23.557C27.1411 23.7544 26.7955 23.9518 26.7955 24.9389V31.0099C26.7955 32.1945 27.5359 32.0958 28.1776 32.0958C30.2999 32.0958 29.8557 28.7395 33.3601 28.7395C35.1863 28.7395 38.0491 29.924 38.0491 32.0958C38.0491 32.6881 37.9997 33.2803 37.8023 33.8726C35.9267 39.4994 33.8537 39.2526 26.3513 39.2526C22.9457 39.2526 19.1945 38.7097 19.1945 35.0079C19.1945 31.5528 19.1451 28.4927 19.1451 25.0377C19.1451 24.4948 18.9971 24.0505 18.4048 24.0505C17.6151 24.0505 17.5657 24.9389 17.5657 25.4819C17.5657 27.2588 17.0721 28.542 16.6773 30.2696C15.6408 34.7117 10.705 39.4007 6.0161 39.4007C3.54823 39.4007 1.91943 38.0186 1.91943 35.4521C1.91943 31.5528 9.71788 30.9112 9.71788 25.6793V23.8037C8.58269 23.8531 7.29941 23.3595 7.29941 21.632ZM25.4629 0.556396C27.7333 0.556396 30.0531 2.67877 31.9781 4.06077C32.8665 4.70242 35.137 6.3806 36.5683 7.71323C37.4074 8.50293 37.6542 9.44074 37.358 10.4772C36.9632 12.0073 35.8773 14.0309 34.3473 14.0309C33.8537 14.0309 33.3108 13.9816 33.1133 13.488C32.8172 11.8593 33.5575 8.70037 27.9308 8.70037H24.4264C22.7483 8.70037 21.465 6.13381 21.465 4.20885C21.465 2.03712 23.5873 0.556396 25.4629 0.556396ZM23.0937 15.9065H16.6279C15.7889 15.9065 15.2953 16.104 15.2953 16.9924C15.2953 17.8315 16.2824 18.0783 16.9735 18.0783H22.9457C24.0315 18.0783 24.5745 17.9302 24.5745 16.7456C24.5745 15.9559 23.6861 15.9065 23.0937 15.9065Z" />
     </svg>
   );
 };
@@ -22,36 +19,18 @@ export const Burger = ({ hover }: { hover: boolean }) => {
       width="40"
       height="40"
       viewBox="0 0 40 40"
-      fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      stroke="black"
+      strokeWidth="4"
+      strokeLinecap="round"
+      className={`${
+        hover && "group-hover:stroke-primary_hover"
+      } dark:stroke-dark_text transition-all duration-200 ease-in-out`}
     >
-      <path
-        d="M5 8.33333H35"
-        stroke="black"
-        stroke-width="4"
-        stroke-linecap="round"
-        className={`${
-          hover && "group-hover:stroke-primary"
-        } dark:stroke-dark_text transition-all duration-200 ease-in-out`}
-      />
-      <path
-        d="M5 20H35"
-        stroke="black"
-        stroke-width="4"
-        stroke-linecap="round"
-        className={`${
-          hover && "group-hover:stroke-primary"
-        } dark:stroke-dark_text transition-all duration-200 ease-in-out`}
-      />
-      <path
-        d="M5 31.6667H35"
-        stroke="black"
-        stroke-width="4"
-        stroke-linecap="round"
-        className={`${
-          hover && "group-hover:stroke-primary"
-        } dark:stroke-dark_text transition-all duration-200 ease-in-out`}
-      />
+      <path d="M5 8.33333H35" />
+      <path d="M5 20H35" />
+      <path d="M5 31.6667H35" />
     </svg>
   );
 };
@@ -62,28 +41,17 @@ export const Close = ({ hover }: { hover: boolean }) => {
       width="40"
       height="40"
       viewBox="0 0 40 40"
-      fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      className="dark:stroke-dark_text transition-all duration-200 ease-in-out"
+      fill="none"
+      stroke="black"
+      strokeWidth="4"
+      strokeLinecap="round"
+      className={`${
+        hover && "group-hover:stroke-primary_hover"
+      } dark:stroke-dark_text transition-all duration-200 ease-in-out`}
     >
-      <path
-        d="M9 31L31 9"
-        stroke="black"
-        stroke-width="4"
-        stroke-linecap="round"
-        className={`${
-          hover && "group-hover:stroke-primary"
-        } dark:stroke-dark_text transition-all duration-200 ease-in-out`}
-      />
-      <path
-        d="M9 9L31 31"
-        stroke="black"
-        stroke-width="4"
-        stroke-linecap="round"
-        className={`${
-          hover && "group-hover:stroke-primary"
-        } dark:stroke-dark_text transition-all duration-200 ease-in-out`}
-      />
+      <path d="M9 31L31 9" />
+      <path d="M9 9L31 31" />
     </svg>
   );
 };
@@ -91,15 +59,18 @@ export const Close = ({ hover }: { hover: boolean }) => {
 export const Home = ({ hover }: { hover: boolean }) => {
   return (
     <svg
+      width="20"
+      height="20"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
-      height="20px"
+      fill="none"
+      stroke="black"
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
       className={`${
-        hover && "group-hover:stroke-primary"
-      } stroke-light_text dark:stroke-dark_text fill-none transition-all duration-200 ease-in-out`}
+        hover && "group-hover:stroke-primary_hover"
+      } dark:stroke-dark_text transition-all duration-200 ease-in-out`}
     >
       <path d="M10 18V15C10 13.8954 10.8954 13 12 13V13C13.1046 13 14 13.8954 14 15V18"></path>
       <path d="M2 8L11.7317 3.13416C11.9006 3.04971 12.0994 3.0497 12.2683 3.13416L22 8"></path>
@@ -110,21 +81,24 @@ export const Home = ({ hover }: { hover: boolean }) => {
 
 export const ServicesIcon = ({
   hover,
-  height,
+  styles,
 }: {
   hover?: boolean;
-  height?: string;
+  styles?: string;
 }) => {
   return (
     <svg
+      width="20"
+      height="20"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
-      height="20px"
+      fill="none"
+      stroke="black"
       strokeWidth="2"
       strokeLinejoin="round"
-      className={`${hover && "group-hover:stroke-primary"} ${
-        height && height
-      } stroke-light_text dark:stroke-dark_text fill-none transition-all duration-200 ease-in-out`}
+      className={`${hover && "group-hover:stroke-primary_hover"} ${
+        styles && styles
+      } dark:stroke-dark_text transition-all duration-200 ease-in-out`}
     >
       <path d="M8 15C12.8747 15 15 12.949 15 8C15 12.949 17.1104 15 22 15C17.1104 15 15 17.1104 15 22C15 17.1104 12.8747 15 8 15Z"></path>
       <path d="M2 6.5C5.13376 6.5 6.5 5.18153 6.5 2C6.5 5.18153 7.85669 6.5 11 6.5C7.85669 6.5 6.5 7.85669 6.5 11C6.5 7.85669 5.13376 6.5 2 6.5Z"></path>
@@ -132,39 +106,24 @@ export const ServicesIcon = ({
   );
 };
 
-export const AboutMe = ({
-  hover,
-  subMenu,
-}: {
-  hover: boolean;
-  subMenu: boolean;
-}) => {
+export const ColorPicker = ({ hover }: { hover: boolean }) => {
   return (
     <svg
-      width="24"
-      height="24"
+      width="20"
+      height="20"
       viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
       fill="none"
       stroke="black"
-      stroke-width="1.5"
-      stroke-linecap="round"
-      stroke-linejoin="round"
-      xmlns="http://www.w3.org/2000/svg"
-      className={`${subMenu ? "stroke-primary" : "dark:stroke-dark_text"} ${
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className={`${
         hover && "group-hover:stroke-primary_hover"
-      } transition-all duration-200 ease-in-out`}
+      } dark:stroke-dark_text transition-all duration-200 ease-in-out`}
     >
-      <path
-        d="M1.25 19C1.25 19.4142 1.58579 19.75 2 19.75C2.41421 19.75 2.75 19.4142 2.75 19H1.25ZM2.75 19V18H1.25V19H2.75ZM2.75 18C2.75 14.5482 5.54822 11.75 9 11.75V10.25C4.7198 10.25 1.25 13.7198 1.25 18H2.75Z"
-        fill="black"
-        stroke="none"
-        className={`${subMenu ? "fill-primary" : "dark:fill-dark_text"} ${
-          hover && "group-hover:fill-primary_hover"
-        }  transition-all duration-200 ease-in-out`}
-      />
-      <path d="M15.8038 11.3135C16.4456 10.6088 17.5544 10.6088 18.1962 11.3135C18.5206 11.6697 18.9868 11.8628 19.468 11.8403C20.4201 11.7958 21.2042 12.5799 21.1597 13.532C21.1372 14.0132 21.3303 14.4794 21.6865 14.8038C22.3912 15.4456 22.3912 16.5544 21.6865 17.1962C21.3303 17.5206 21.1372 17.9868 21.1597 18.468C21.2042 19.4201 20.4201 20.2042 19.468 20.1597C18.9868 20.1372 18.5206 20.3303 18.1962 20.6865C17.5544 21.3912 16.4456 21.3912 15.8038 20.6865C15.4794 20.3303 15.0132 20.1372 14.532 20.1597C13.5799 20.2042 12.7958 19.4201 12.8403 18.468C12.8628 17.9868 12.6697 17.5206 12.3135 17.1962C11.6088 16.5544 11.6088 15.4456 12.3135 14.8038C12.6697 14.4794 12.8628 14.0132 12.8403 13.532C12.7958 12.5799 13.5799 11.7958 14.532 11.8403C15.0132 11.8628 15.4794 11.6697 15.8038 11.3135Z" />
-      <path d="M15.3636 16L16.4546 17.0909L18.6364 14.9091" />
-      <path d="M9 11C11.2091 11 13 9.2091 13 7C13 4.79086 11.2091 3 9 3C6.79086 3 5 4.79086 5 7C5 9.2091 6.79086 11 9 11Z" />
+      <path d="M7 13.161L12.4644 7.6966C12.8549 7.30607 13.4881 7.30607 13.8786 7.6966L15.9999 9.81792C16.3904 10.2084 16.3904 10.8416 15.9999 11.2321L14.0711 13.161M7 13.161L4.82764 15.3334C4.73428 15.4267 4.66034 15.5376 4.61007 15.6597L3.58204 18.1563C3.07438 19.3892 4.30728 20.6221 5.54018 20.1145L8.03681 19.0865C8.1589 19.0362 8.26981 18.9622 8.36317 18.8689L14.0711 13.161M7 13.161H14.0711"></path>
+      <path d="M13.878 3.45401L15.9993 5.57533M20.242 9.81798L18.1206 7.69666M15.9993 5.57533L17.4135 4.16112C17.8041 3.7706 18.4372 3.7706 18.8277 4.16112L19.5349 4.86823C19.9254 5.25875 19.9254 5.89192 19.5349 6.28244L18.1206 7.69666M15.9993 5.57533L18.1206 7.69666"></path>
     </svg>
   );
 };
@@ -180,59 +139,71 @@ export const NavArrowDown = ({
     <svg
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
-      height="20px"
+      height="20"
+      fill="none"
+      stroke="black"
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
-      className={`${
-        subMenu
-          ? "stroke-primary dark:stroke-primary"
-          : "stroke-light_text dark:stroke-dark_text"
-      } ${hover && "group-hover:stroke-primary_hover"} ${
-        subMenu ? "rotate-180" : "rotate-0"
-      } fill-none transition-all duration-200 ease-in-out`}
+      className={`${subMenu && "rotate-180"} ${
+        hover && "group-hover:stroke-primary_hover"
+      } dark:stroke-dark_text transition-all duration-200 ease-in-out`}
     >
       <path d="M6 9L12 15L18 9"></path>
     </svg>
   );
 };
 
-export const NavArrowRight = ({ hover }: { hover: boolean }) => {
+export const CodeIcon = ({
+  hover,
+  styles,
+}: {
+  hover?: boolean;
+  styles?: string;
+}) => {
   return (
     <svg
+      width="20"
+      height="20"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
-      height="20px"
+      fill="none"
+      stroke="black"
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
-      className={`${
-        hover && "group-hover:stroke-primary"
-      } stroke-light_text dark:stroke-dark_text fill-none transition-all duration-200 ease-in-out`}
+      className={`${hover && "group-hover:stroke-primary_hover"} ${
+        styles && styles
+      } dark:stroke-dark_text transition-all duration-200 ease-in-out`}
     >
-      <path d="M9 6L15 12L9 18"></path>
+      <path d="M13.5 6L10 18.5"></path>
+      <path d="M6.5 8.5L3 12L6.5 15.5"></path>
+      <path d="M17.5 8.5L21 12L17.5 15.5"></path>
     </svg>
   );
 };
 
 export const BookCode = ({
   hover,
-  height,
+  styles,
 }: {
   hover?: boolean;
-  height?: string;
+  styles?: string;
 }) => {
   return (
     <svg
+      width="20"
+      height="20"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
-      height="20px"
+      fill="none"
+      stroke="black"
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
-      className={`${hover && "group-hover:stroke-primary"} ${
-        height && height
-      } stroke-light_text dark:stroke-dark_text fill-none transition-all duration-200 ease-in-out`}
+      className={`${hover && "group-hover:stroke-primary_hover"} ${
+        styles && styles
+      } dark:stroke-dark_text transition-all duration-200 ease-in-out`}
     >
       <path d="M4 19V5C4 3.89543 4.89543 3 6 3H19.4C19.7314 3 20 3.26863 20 3.6V16.7143" />
       <path d="M6 17H20" />
@@ -245,44 +216,21 @@ export const BookCode = ({
   );
 };
 
-export const CodeIcon = ({
-  hover,
-  height,
-}: {
-  hover?: boolean;
-  height?: string;
-}) => {
-  return (
-    <svg
-      viewBox="0 0 24 24"
-      xmlns="http://www.w3.org/2000/svg"
-      height="20px"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      className={`${hover && "group-hover:stroke-primary"} ${
-        height && height
-      } stroke-light_text dark:stroke-dark_text fill-none transition-all duration-200 ease-in-out`}
-    >
-      <path d="M13.5 6L10 18.5"></path>
-      <path d="M6.5 8.5L3 12L6.5 15.5"></path>
-      <path d="M17.5 8.5L21 12L17.5 15.5"></path>
-    </svg>
-  );
-};
-
 export const Formation = ({ hover }: { hover: boolean }) => {
   return (
     <svg
-      xmlns="http://www.w3.org/2000/svg"
+      width="20"
+      height="20"
       viewBox="0 0 24 24"
-      height="20px"
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      stroke="black"
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
       className={`${
-        hover && "group-hover:stroke-primary"
-      } stroke-light_text dark:stroke-dark_text fill-none transition-all duration-200 ease-in-out`}
+        hover && "group-hover:stroke-primary_hover"
+      } dark:stroke-dark_text transition-all duration-200 ease-in-out`}
     >
       <path d="M0 0h24v24H0z" stroke="none"></path>
       <path d="M22 9l-10 -4l-10 4l10 4l10 -4v6"></path>
@@ -291,18 +239,21 @@ export const Formation = ({ hover }: { hover: boolean }) => {
   );
 };
 
-export const Sun = ({ hover }: { hover: boolean }) => {
+export const Sun = ({ hover, theme }: { hover: boolean; theme: boolean }) => {
   return (
     <svg
+      width="20"
+      height="20"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
-      height="20px"
+      fill="none"
+      stroke="black"
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
-      className={`${
-        hover && "group-hover:stroke-primary"
-      } stroke-light_text dark:stroke-dark_text fill-none transition-all duration-200 ease-in-out`}
+      className={`${theme ? "stroke-primary" : "dark:stroke-dark_text"} ${
+        hover && "group-hover:stroke-primary_hover"
+      } transition-all duration-200 ease-in-out`}
     >
       <path d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18Z"></path>
       <path d="M22 12L23 12"></path>
@@ -317,18 +268,21 @@ export const Sun = ({ hover }: { hover: boolean }) => {
   );
 };
 
-export const Moon = ({ hover }: { hover: boolean }) => {
+export const Moon = ({ hover, theme }: { hover: boolean; theme: boolean }) => {
   return (
     <svg
+      width="20"
+      height="20"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
-      height="20px"
+      fill="none"
+      stroke="black"
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
-      className={`${
-        hover && "group-hover:stroke-primary"
-      } stroke-light_text dark:stroke-dark_text fill-none transition-all duration-200 ease-in-out`}
+      className={`${theme ? "stroke-primary" : "dark:stroke-dark_text"} ${
+        hover && "group-hover:stroke-primary_hover"
+      } transition-all duration-200 ease-in-out`}
     >
       <path d="M3 11.5066C3 16.7497 7.25034 21 12.4934 21C16.2209 21 19.4466 18.8518 21 15.7259C12.4934 15.7259 8.27411 11.5066 8.27411 3C5.14821 4.55344 3 7.77915 3 11.5066Z"></path>
     </svg>
@@ -338,10 +292,11 @@ export const Moon = ({ hover }: { hover: boolean }) => {
 export const LinkedIn = () => {
   return (
     <svg
+      width="20"
+      height="20"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
-      height="20px"
-      className=" fill-dark_text"
+      fill="white"
     >
       <g clipPath="url(#clip0_170_328)">
         <path d="M19.0409 19.0412H16.0776V14.4004C16.0776 13.2937 16.0578 11.8691 14.5363 11.8691C12.9929 11.8691 12.7567 13.0749 12.7567 14.3198V19.0409H9.79343V9.49747H12.6382V10.8017H12.678C12.9627 10.3149 13.3741 9.91443 13.8684 9.64295C14.3627 9.37147 14.9214 9.23914 15.4849 9.26005C18.4884 9.26005 19.0422 11.2357 19.0422 13.8058L19.0409 19.0412ZM6.44969 8.19302C5.49992 8.19317 4.72984 7.42333 4.72969 6.47356C4.72953 5.5238 5.4993 4.75372 6.44906 4.75356C7.39883 4.75333 8.1689 5.52317 8.16906 6.47294C8.16914 6.92903 7.98804 7.36648 7.6656 7.68906C7.34316 8.01163 6.90578 8.19291 6.44969 8.19302ZM7.9314 19.0413H4.96492V9.49747H7.93133V19.0412L7.9314 19.0413ZM20.5183 2.00146H3.47586C2.67039 1.99239 2.00984 2.63763 2 3.4431V20.5566C2.00953 21.3625 2.67 22.0083 3.47578 21.9999H20.5183C21.3258 22.0099 21.9888 21.364 22 20.5566V3.44177C21.9885 2.63474 21.3254 1.98958 20.5183 2.00013" />
@@ -358,10 +313,11 @@ export const LinkedIn = () => {
 export const GitHub = () => {
   return (
     <svg
+      width="20"
+      height="20"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
-      height="20px"
-      className=" fill-dark_text"
+      fill="white"
     >
       <g clipPath="url(#clip0_170_345)">
         <path d="M12.0001 2C6.47789 2 2 6.47711 2 12.0001C2 16.4184 4.86531 20.1669 8.83867 21.4891C9.33844 21.5817 9.52195 21.2722 9.52195 21.008C9.52195 20.7696 9.51258 19.9819 9.50836 19.1463C6.72633 19.7512 6.1393 17.9664 6.1393 17.9664C5.68438 16.8105 5.02891 16.5031 5.02891 16.5031C4.12164 15.8825 5.09734 15.8953 5.09734 15.8953C6.10148 15.9658 6.63023 16.9258 6.63023 16.9258C7.52219 18.4545 8.96969 18.0126 9.54031 17.757C9.63008 17.1108 9.88922 16.6695 10.1752 16.4198C7.95406 16.167 5.61914 15.3095 5.61914 11.4778C5.61914 10.386 6.00977 9.49391 6.64945 8.79359C6.54563 8.54172 6.20336 7.52469 6.74633 6.14719C6.74633 6.14719 7.58609 5.87844 9.49711 7.17227C10.2948 6.9507 11.1502 6.83961 12.0001 6.83578C12.8499 6.83961 13.7061 6.95063 14.5052 7.17227C16.4139 5.87852 17.2525 6.14727 17.2525 6.14727C17.7968 7.52461 17.4544 8.5418 17.3505 8.79359C17.9917 9.49391 18.3797 10.386 18.3797 11.4778C18.3797 15.3187 16.0403 16.1644 13.8135 16.412C14.1722 16.7223 14.4918 17.3309 14.4918 18.2638C14.4918 19.6018 14.4802 20.6787 14.4802 21.008C14.4802 21.2742 14.6602 21.586 15.1671 21.4877C19.1383 20.1641 22 16.417 22 12.0002C22 6.47711 17.5227 2 12.0001 2ZM5.74539 16.2453C5.72336 16.295 5.64516 16.3099 5.57398 16.2758C5.50141 16.2432 5.4607 16.1755 5.48414 16.1256C5.5057 16.0745 5.58406 16.0602 5.65641 16.0945C5.72906 16.1271 5.77047 16.1955 5.74539 16.2453ZM6.23727 16.6842C6.18961 16.7284 6.09633 16.7079 6.03305 16.638C5.96766 16.5684 5.95539 16.4751 6.00375 16.4302C6.05297 16.386 6.14336 16.4067 6.20891 16.4764C6.27438 16.547 6.28703 16.6395 6.23727 16.6842ZM6.57477 17.2458C6.51344 17.2884 6.41328 17.2484 6.35133 17.1595C6.29008 17.0706 6.29008 16.964 6.35266 16.9213C6.41477 16.8785 6.51344 16.917 6.57617 17.0052C6.63727 17.0956 6.63727 17.2023 6.57469 17.2459L6.57477 17.2458ZM7.14539 17.8962C7.09063 17.9566 6.97383 17.9404 6.88836 17.8579C6.80094 17.7773 6.77664 17.6629 6.83164 17.6024C6.88711 17.5418 7.00453 17.5588 7.09063 17.6407C7.17734 17.7212 7.20391 17.8364 7.14539 17.8962ZM7.88305 18.1157C7.85883 18.1941 7.74633 18.2297 7.63312 18.1964C7.52 18.1621 7.44602 18.0704 7.46883 17.9913C7.49234 17.9123 7.60531 17.8753 7.71938 17.9109C7.83234 17.945 7.90656 18.036 7.88305 18.1157ZM8.72242 18.2089C8.72523 18.2913 8.62922 18.3597 8.51031 18.3612C8.39078 18.3639 8.29398 18.2972 8.29266 18.2159C8.29266 18.1327 8.38656 18.065 8.50617 18.063C8.62508 18.0606 8.72242 18.1269 8.72242 18.2089ZM9.54703 18.1773C9.56125 18.2577 9.47867 18.3404 9.36055 18.3624C9.24453 18.3836 9.13703 18.3339 9.12227 18.2541C9.10789 18.1716 9.19203 18.089 9.30789 18.0677C9.42617 18.0471 9.53195 18.0955 9.54703 18.1773Z" />
@@ -378,10 +334,11 @@ export const GitHub = () => {
 export const Gmail = () => {
   return (
     <svg
-      viewBox="0 0 30 24"
+      width="25"
+      height="16"
+      viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
-      height="16px"
-      className=" w-full fill-dark_text"
+      fill="white"
     >
       <path d="M2.90916 22.9999H7.36373V11.6694L1 6.67065V21.0005C1 22.1052 1.85434 23 2.90916 23V22.9999Z" />
       <path d="M22.6362 22.9999H27.0909C28.1456 22.9999 29 22.1051 29 21.0004V6.67065L22.6362 11.6694V22.9999Z" />
@@ -395,10 +352,11 @@ export const Gmail = () => {
 export const WhatsApp = () => {
   return (
     <svg
+      width="20"
+      height="18"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
-      height="18px"
-      className=" fill-dark_text"
+      fill="white"
     >
       <path
         fillRule="evenodd"
@@ -413,34 +371,39 @@ export const WhatsApp = () => {
 export const Responsive = () => {
   return (
     <svg
+      width="100%"
+      height="56"
       viewBox="0 0 38 24"
-      fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      height="56px"
+      fill="none"
     >
       <path
         d="M31 16.0099L31.01 15.9988"
+        stroke="black"
         strokeWidth="1.5"
         strokeLinecap="round"
         strokeLinejoin="round"
-        className="stroke-light_text dark:stroke-dark_text transition-all duration-200 ease-in-out"
+        className="dark:stroke-dark_text transition-all duration-200 ease-in-out"
       />
       <path
         d="M26 19.4V4.6C26 4.26863 26.2686 4 26.6 4H35.4C35.7314 4 36 4.26863 36 4.6V19.4C36 19.7314 35.7314 20 35.4 20H26.6C26.2686 20 26 19.7314 26 19.4Z"
+        stroke="black"
         strokeWidth="1.5"
-        className="stroke-light_text dark:stroke-dark_text transition-all duration-200 ease-in-out"
+        className="dark:stroke-dark_text transition-all duration-200 ease-in-out"
       />
       <path
         d="M2 15.5V2.6C2 2.26863 2.26863 2 2.6 2H21.4C21.7314 2 22 2.26863 22 2.6V15.5M2 15.5V17.4C2 17.7314 2.26863 18 2.6 18H21.4C21.7314 18 22 17.7314 22 17.4V15.5M2 15.5H22M9 22H10.5M10.5 22V18M10.5 22H13.5M13.5 22H15M13.5 22V18"
+        stroke="black"
         strokeWidth="1.5"
         strokeLinecap="round"
         strokeLinejoin="round"
-        className="stroke-light_text dark:stroke-dark_text transition-all duration-200 ease-in-out"
+        className="dark:stroke-dark_text transition-all duration-200 ease-in-out"
       />
       <g clipPath="url(#clip0_86_166)">
         <path
           d="M8.82497 9.40806V7.17464C8.82497 6.44661 9.52831 6.533 10.0959 6.533H13.4769C14.2666 6.533 14.9206 6.40961 14.9083 7.39675L14.8959 8.50728C14.8836 9.39572 14.9083 9.70421 14.0198 9.8893C13.7854 9.93866 13.699 9.98801 13.699 10.2348V11.7525C13.699 12.0487 13.8841 12.024 14.0445 12.024C14.5751 12.024 14.4641 11.1849 15.3401 11.1849C15.7967 11.1849 16.5124 11.4811 16.5124 12.024C16.5124 12.1721 16.5 12.3201 16.4507 12.4682C15.9818 13.8749 15.4635 13.8132 13.5879 13.8132C12.7365 13.8132 11.7988 13.6775 11.7988 12.752C11.7988 11.8883 11.7864 11.1232 11.7864 10.2595C11.7864 10.1237 11.7494 10.0127 11.6013 10.0127C11.4039 10.0127 11.3916 10.2348 11.3916 10.3705C11.3916 10.8148 11.2682 11.1356 11.1695 11.5674C10.9103 12.678 9.67638 13.8502 8.50415 13.8502C7.88718 13.8502 7.47998 13.5047 7.47998 12.8631C7.47998 11.8883 9.42959 11.7279 9.42959 10.4199V9.951C9.14579 9.96333 8.82497 9.83994 8.82497 9.40806ZM13.3658 4.13916C13.9335 4.13916 14.5134 4.66975 14.9946 5.01525C15.2168 5.17567 15.7844 5.59521 16.1422 5.92837C16.352 6.12579 16.4137 6.36024 16.3396 6.61937C16.2409 7.00189 15.9695 7.5078 15.5869 7.5078C15.4635 7.5078 15.3278 7.49546 15.2785 7.37207C15.2044 6.96488 15.3895 6.17515 13.9828 6.17515H13.1067C12.6872 6.17515 12.3664 5.53351 12.3664 5.05227C12.3664 4.50934 12.8969 4.13916 13.3658 4.13916ZM12.7736 7.9767H11.1571C10.9473 7.9767 10.8239 8.02606 10.8239 8.24816C10.8239 8.45794 11.0707 8.51963 11.2435 8.51963H12.7365C13.008 8.51963 13.1437 8.48261 13.1437 8.18646C13.1437 7.98904 12.9216 7.9767 12.7736 7.9767Z"
-          className="dark:fill-dark_text fill-light_text transition-all duration-200 ease-in-out"
+          fill="black"
+          className="dark:fill-dark_text transition-all duration-200 ease-in-out"
         />
       </g>
       <defs>
@@ -460,13 +423,16 @@ export const Responsive = () => {
 export const Optimization = () => {
   return (
     <svg
+      width="100%"
+      height="56"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
-      height="56px"
+      fill="none"
+      stroke="black"
       strokeWidth="1.5"
       strokeLinecap="round"
       strokeLinejoin="round"
-      className="fill-none stroke-light_text dark:stroke-dark_text transition-all duration-200 ease-in-out"
+      className="dark:stroke-dark_text transition-all duration-200 ease-in-out"
     >
       <path d="M13 21H4C2.89543 21 2 20.1046 2 19V5C2 3.89543 2.89543 3 4 3H20C21.1046 3 22 3.89543 22 5V14"></path>
       <path d="M2 7L22 7"></path>
@@ -481,13 +447,16 @@ export const Optimization = () => {
 export const Maintenance = () => {
   return (
     <svg
+      width="100%"
+      height="56"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
-      height="56px"
+      fill="none"
+      stroke="black"
       strokeWidth="1.5"
       strokeLinecap="round"
       strokeLinejoin="round"
-      className="fill-none stroke-light_text dark:stroke-dark_text transition-all duration-200 ease-in-out"
+      className="dark:stroke-dark_text transition-all duration-200 ease-in-out"
     >
       <path d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z"></path>
       <path d="M19.6224 10.3954L18.5247 7.7448L20 6L18 4L16.2647 5.48295L13.5578 4.36974L12.9353 2H10.981L10.3491 4.40113L7.70441 5.51596L6 4L4 6L5.45337 7.78885L4.3725 10.4463L2 11V13L4.40111 13.6555L5.51575 16.2997L4 18L6 20L7.79116 18.5403L10.397 19.6123L11 22H13L13.6045 19.6132L16.2551 18.5155C16.6969 18.8313 18 20 18 20L20 18L18.5159 16.2494L19.6139 13.598L21.9999 12.9772L22 11L19.6224 10.3954Z"></path>
@@ -498,9 +467,10 @@ export const Maintenance = () => {
 export const WavePrimary = () => {
   return (
     <svg
+      width="100%"
+      height="56"
       viewBox="0 0 283.5 27.8"
       xmlns="http://www.w3.org/2000/svg"
-      width="100%"
       preserveAspectRatio="none"
       id="wave-primary"
       className="rotate-180 fill-light_background dark:fill-dark_background transition-all duration-200 ease-in-out"
