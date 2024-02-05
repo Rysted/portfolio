@@ -17,7 +17,7 @@ const App = () => {
   return (
     <>
       <Header />
-      <main className="md:mt-0 lg:mr-56 font-poppins">
+      <main className="md:mt-0 lg:mr-60 font-poppins">
         <Home />
         <Services />
         <Projects />

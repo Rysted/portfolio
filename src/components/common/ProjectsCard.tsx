@@ -22,7 +22,9 @@ const ProjectsCard = ({
           src={`./projects/${image}`}
           alt={`Imagen de ${alt}`}
           loading="lazy"
-          className="block rounded-[25px] object-cover p-4 my-auto"
+          width="0"
+          height="100%"
+          className="block w-auto rounded-[25px] object-cover p-4 my-auto"
         />
       </div>
       <div className="p-4 bg-light_highlight dark:bg-dark_highlight rounded-b-xl shadow-lg transition-all duration-200 ease-in-out">

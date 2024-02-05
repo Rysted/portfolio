@@ -55,15 +55,17 @@ const Header = () => {
         onClick={toggleSidebar}
       ></span>
       <div
-        className={`bg-light_highlight dark:bg-dark_highlight fixed ${
-          isOpenMenu ? "right-0" : "-right-60"
-        } top-20 lg:right-0 lg:top-0 w-56 h-screen flex-col justify-start px-0 font-poppins shadow-light_left dark:shadow-dark_left transition-all duration-200 ease-in-out z-10`}
+        className={`bg-light_background dark:bg-dark_background fixed ${
+          isOpenMenu ? "right-0" : "-right-64"
+        } p-5 pl-0 lg:right-0 lg:top-0 w-60 h-screen flex-col justify-start font-poppins transition-all duration-200 ease-in-out z-10`}
       >
-        <div className="opacity-0 w-0 h-0 my-0 md:w-full md:flex md:justify-center md:h-auto md:opacity-100 md:mt-8 md:mb-5">
-          <LogoTipo />
-        </div>
+        <div className="bg-light_highlight dark:bg-dark_highlight rounded-3xl">
+          <div className="opacity-0 w-0 h-0 my-0 md:w-full md:flex md:justify-center md:h-auto md:opacity-100 md:pt-8 md:pb-5">
+            <LogoTipo />
+          </div>
 
-        <NavMenu closeSidebar={closeSidebar} />
+          <NavMenu closeSidebar={closeSidebar} />
+        </div>
       </div>
     </header>
   );
