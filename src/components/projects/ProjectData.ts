@@ -21,7 +21,7 @@ export const ProjectData = [
     image: "mrcoffee.webp",
     title: "MrCoffee - MPA",
     description:
-      "MrCoffee: Un e-commerce especializado en café y alimentos de alta calidad. Se ofrece a los clientes la opción de pago en línea y recolección en tienda.",
+      "MrCoffee es un e-commerce de café y alimentos de alta calidad. Se ofrece la opción de pago en línea y recolección en tienda.",
     tags: [
       "HTML",
       "CSS",

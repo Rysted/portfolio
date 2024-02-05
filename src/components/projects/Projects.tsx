@@ -30,7 +30,7 @@ const Projects = () => {
           Proyectos
         </h2>
       </header>
-      <article className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 max-w-[800px] lg:max-w-[1100px] mx-auto pt-10">
+      <article className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-5 max-w-[800px] lg:max-w-[1100px] mx-auto pt-10">
         {ProjectData.slice(0, visibleCards).map(
           (
             project: {
