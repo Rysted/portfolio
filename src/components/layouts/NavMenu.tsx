@@ -12,7 +12,7 @@ import {
 
 const NavMenu = ({ closeSidebar }: { closeSidebar: () => void }) => {
   return (
-    <nav className="md:block h-svh overflow-x-auto pb-24">
+    <nav className="h-svh overflow-x-auto pt-5 pb-24 md:block">
       <ul className="flex flex-col gap-y-2 px-6">
         <li>
           <MenuItem url="#home" text="Inicio" closeSidebar={closeSidebar}>

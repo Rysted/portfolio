@@ -22,15 +22,15 @@ const SubMenu = () => {
         <div className="flex items-center gap-x-3">
           <ColorPicker hover={true} />
           <span className="max-h-5 text-base font-semibold dark:text-dark_text group-hover:text-primary_hover transition-all duration-200 ease-in-out">
-            Estilo
+            Cambiar Estilo
           </span>
         </div>
         <NavArrowDown hover={true} subMenu={subMenu} />
       </button>
       <div
         className={`${
-          subMenu ? "h-20" : "h-0"
-        } px-3 overflow-hidden flex flex-col justify-center bg-light_background dark:bg-dark_background rounded-xl transition-all duration-200 ease-in-out`}
+          subMenu ? "h-24" : "h-0"
+        } px-3 overflow-hidden flex flex-col justify-center gap-1 bg-light_background dark:bg-dark_background rounded-xl transition-all duration-200 ease-in-out`}
       >
         <Theme />
       </div>
