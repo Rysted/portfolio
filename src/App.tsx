@@ -2,6 +2,7 @@ import Header from "./components/layouts/Header";
 import Home from "./components/Home";
 import Services from "./components/Services";
 import Projects from "./components/projects/Projects";
+import Skills from "./components/Skills";
 import { WavePrimary } from "./Icons/Icons";
 import { useEffect } from "react";
 
@@ -21,6 +22,7 @@ const App = () => {
         </section>
         <Services />
         <Projects />
+        <Skills />
       </main>
     </>
   );

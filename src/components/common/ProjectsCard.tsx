@@ -15,12 +15,12 @@ const ProjectsCard = ({
 }) => {
   return (
     <div>
-      <div className="bg-primary rounded-t-xl">
+      <div className="bg-primary rounded-t-xl flex justify-center">
         <img
           src={`./projects/${image}`}
           alt="Imagen de MrCoffee"
           loading="lazy"
-          className="block rounded-[25px] object-cover p-4"
+          className="block h-56 rounded-[25px] object-cover p-4"
         />
       </div>
       <div className="p-4 bg-light_highlight dark:bg-dark_highlight rounded-b-xl shadow-lg transition-all duration-200 ease-in-out">

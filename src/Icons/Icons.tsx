@@ -82,6 +82,29 @@ export const Home = ({ hover }: { hover: boolean }) => {
   );
 };
 
+export const ServicesIcon = ({
+  hover,
+  height,
+}: {
+  hover?: boolean;
+  height?: string;
+}) => {
+  return (
+    <svg
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+      strokeWidth="2"
+      strokeLinejoin="round"
+      className={`${hover && "group-hover:stroke-primary"} ${
+        height ? height : "h-5"
+      } stroke-light_text dark:stroke-dark_text fill-none transition-all duration-200 ease-in-out`}
+    >
+      <path d="M8 15C12.8747 15 15 12.949 15 8C15 12.949 17.1104 15 22 15C17.1104 15 15 17.1104 15 22C15 17.1104 12.8747 15 8 15Z"></path>
+      <path d="M2 6.5C5.13376 6.5 6.5 5.18153 6.5 2C6.5 5.18153 7.85669 6.5 11 6.5C7.85669 6.5 6.5 7.85669 6.5 11C6.5 7.85669 5.13376 6.5 2 6.5Z"></path>
+    </svg>
+  );
+};
+
 export const AboutMe = ({
   hover,
   subMenu,
@@ -156,7 +179,13 @@ export const NavArrowRight = ({ hover }: { hover: boolean }) => {
   );
 };
 
-export const BookCode = ({ hover }: { hover: boolean }) => {
+export const BookCode = ({
+  hover,
+  height,
+}: {
+  hover?: boolean;
+  height?: string;
+}) => {
   return (
     <svg
       viewBox="0 0 24 24"
@@ -164,9 +193,9 @@ export const BookCode = ({ hover }: { hover: boolean }) => {
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
-      className={`${
-        hover && "group-hover:stroke-primary"
-      } h-5 stroke-light_text dark:stroke-dark_text fill-none transition-all duration-200 ease-in-out`}
+      className={`${hover && "group-hover:stroke-primary"} ${
+        height ? height : "h-5"
+      } stroke-light_text dark:stroke-dark_text fill-none transition-all duration-200 ease-in-out`}
     >
       <path d="M4 19V5C4 3.89543 4.89543 3 6 3H19.4C19.7314 3 20 3.26863 20 3.6V16.7143" />
       <path d="M6 17H20" />
@@ -219,47 +248,6 @@ export const Formation = ({ hover }: { hover: boolean }) => {
       <path d="M0 0h24v24H0z" stroke="none"></path>
       <path d="M22 9l-10 -4l-10 4l10 4l10 -4v6"></path>
       <path d="M6 10.6v5.4a6 3 0 0 0 12 0v-5.4"></path>
-    </svg>
-  );
-};
-
-export const ServicesIcon = ({
-  hover,
-  height,
-}: {
-  hover?: boolean;
-  height?: string;
-}) => {
-  return (
-    <svg
-      viewBox="0 0 24 24"
-      xmlns="http://www.w3.org/2000/svg"
-      strokeWidth="2"
-      strokeLinejoin="round"
-      className={`${hover && "group-hover:stroke-primary"} ${
-        height ? height : "h-5"
-      } stroke-light_text dark:stroke-dark_text fill-none transition-all duration-200 ease-in-out`}
-    >
-      <path d="M8 15C12.8747 15 15 12.949 15 8C15 12.949 17.1104 15 22 15C17.1104 15 15 17.1104 15 22C15 17.1104 12.8747 15 8 15Z"></path>
-      <path d="M2 6.5C5.13376 6.5 6.5 5.18153 6.5 2C6.5 5.18153 7.85669 6.5 11 6.5C7.85669 6.5 6.5 7.85669 6.5 11C6.5 7.85669 5.13376 6.5 2 6.5Z"></path>
-    </svg>
-  );
-};
-
-export const Contact = ({ hover }: { hover: boolean }) => {
-  return (
-    <svg
-      viewBox="0 0 24 24"
-      xmlns="http://www.w3.org/2000/svg"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      className={`${
-        hover && "group-hover:stroke-primary"
-      } h-5 stroke-light_text dark:stroke-dark_text fill-none transition-all duration-200 ease-in-out`}
-    >
-      <path d="M7 9L12 12.5L17 9"></path>
-      <path d="M2 17V7C2 5.89543 2.89543 5 4 5H20C21.1046 5 22 5.89543 22 7V17C22 18.1046 21.1046 19 20 19H4C2.89543 19 2 18.1046 2 17Z"></path>
     </svg>
   );
 };
