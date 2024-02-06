@@ -23,13 +23,21 @@ const Theme = () => {
 
     if (htmlElement) {
       htmlElement.classList.toggle("dark", theme === "dark");
+
+      if (theme === "dark") {
+        htmlElement.style.transition = "background-color 150ms ease-in-out";
+        htmlElement.style.backgroundColor = "#000000";
+      } else {
+        htmlElement.style.transition = "background-color 150ms ease-in-out";
+        htmlElement.style.backgroundColor = "#e5e9f5";
+      }
     }
   }, [theme]);
 
   return (
     <>
       <button
-        className="group py-2 w-full md:block transition-all duration-200 ease-in-out"
+        className="group py-2 w-full transition-all duration-200 ease-in-out"
         onClick={switchToLightTheme}
         aria-label="Cambiar tema del sitio web"
       >
@@ -46,7 +54,7 @@ const Theme = () => {
       </button>
 
       <button
-        className="group py-2 w-full md:block transition-all duration-200 ease-in-out"
+        className="group py-2 w-full transition-all duration-200 ease-in-out"
         onClick={switchToDarkTheme}
         aria-label="Cambiar tema del sitio web"
       >
