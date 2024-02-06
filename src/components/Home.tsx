@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <section
       id="home"
-      className="items-center p-5 pt-24 md:pt-5 h-screen select-none bg-light_background dark:bg-dark_background transition-all duration-200 ease-in-out"
+      className="items-center p-5 pt-24 md:pt-5 h-screen select-none"
     >
       <article className="w-full h-full p-5 rounded-3xl flex justify-center items-center lg:bg-light_highlight lg:dark:bg-dark_highlight transition-all duration-200 ease-in-out">
         <div className="max-w-[500px] pt-5 md:max-w-[800px] lg:max-w-[1100px]">
