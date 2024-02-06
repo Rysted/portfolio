@@ -2,17 +2,11 @@ import MenuItem from "../common/MenuItem";
 import SubMenu from "./SubMenu";
 
 // Icons
-import {
-  BookCode,
-  CodeIcon,
-  Formation,
-  Home,
-  ServicesIcon,
-} from "../../Icons/Icons";
+import { BookCode, CodeIcon, Home, ServicesIcon } from "../../Icons/Icons";
 
 const NavMenu = ({ closeSidebar }: { closeSidebar: () => void }) => {
   return (
-    <nav className="h-svh overflow-x-auto pt-5 pb-24 md:block">
+    <nav className="py-5">
       <ul className="flex flex-col gap-y-2 px-6">
         <li>
           <MenuItem url="#home" text="Inicio" closeSidebar={closeSidebar}>
@@ -47,6 +41,9 @@ const NavMenu = ({ closeSidebar }: { closeSidebar: () => void }) => {
           </MenuItem>
         </li>
         <li>
+          <SubMenu />
+        </li>
+        {/*  <li>
           <MenuItem
             url="#formation"
             text="Formación"
@@ -54,10 +51,7 @@ const NavMenu = ({ closeSidebar }: { closeSidebar: () => void }) => {
           >
             <Formation hover={true} />
           </MenuItem>
-        </li>
-        <li>
-          <SubMenu />
-        </li>
+        </li> */}
       </ul>
     </nav>
   );
