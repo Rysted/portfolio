@@ -5,7 +5,7 @@ export const SkillsData = [
     title: "Backend",
     skills: ["Node.js", "Express.js", "EJS", "MySQL", "Sequelize"],
   },
-  { title: "Framework", skills: ["React"] },
+  { title: "Frontend", skills: ["React"] },
   { title: "Diseño", skills: ["Figma", "Miro"] },
   {
     title: "Herramientas",

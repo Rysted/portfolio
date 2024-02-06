@@ -7,10 +7,10 @@ import { BookCode, CodeIcon, Home, ServicesIcon } from "../../Icons/Icons";
 const NavMenu = ({ closeSidebar }: { closeSidebar: () => void }) => {
   return (
     <nav className="py-5">
-      <ul className="flex flex-col gap-y-2 px-6">
+      <ul className="flex flex-col gap-y-2 px-4">
         <li>
           <MenuItem url="#home" text="Inicio" closeSidebar={closeSidebar}>
-            <Home hover={true} />
+            <Home />
           </MenuItem>
         </li>
         <li>
@@ -40,18 +40,9 @@ const NavMenu = ({ closeSidebar }: { closeSidebar: () => void }) => {
             <BookCode hover={true} />
           </MenuItem>
         </li>
-        <li>
+        <li className="bg-light_background dark:bg-dark_background rounded-xl transition-all duration-200 ease-in-out">
           <SubMenu />
         </li>
-        {/*  <li>
-          <MenuItem
-            url="#formation"
-            text="Formación"
-            closeSidebar={closeSidebar}
-          >
-            <Formation hover={true} />
-          </MenuItem>
-        </li> */}
       </ul>
     </nav>
   );

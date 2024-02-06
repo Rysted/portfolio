@@ -45,7 +45,7 @@ const Header = () => {
           className="group"
           aria-label="Abrir menú"
         >
-          {isOpenMenu ? <Close hover={true} /> : <Burger hover={true} />}
+          {isOpenMenu ? <Close /> : <Burger />}
         </button>
       </div>
       <span
@@ -59,7 +59,7 @@ const Header = () => {
           isOpenMenu ? "right-0" : "-right-64"
         } w-60 top-20 lg:top-0 lg:right-0 lg:pt-5 lg:pr-5 flex-col justify-start font-poppins z-10`}
       >
-        <div className=" h-svh overflow-y-auto lg:rounded-3xl lg:h-max bg-light_highlight dark:bg-dark_highlight transition-all duration-200 ease-in-out">
+        <div className=" h-svh overflow-y-auto lg:rounded-xl lg:h-max bg-light_highlight dark:bg-dark_highlight transition-all duration-200 ease-in-out">
           <div className="opacity-0 w-0 h-0 my-0 lg:w-full lg:flex lg:justify-center lg:h-auto lg:opacity-100 lg:pt-8 lg:pb-5">
             <LogoTipo />
           </div>

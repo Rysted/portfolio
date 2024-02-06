@@ -1,10 +1,10 @@
 const IconLink = ({
   url,
-  text,
+  title,
   children,
 }: {
   url: string;
-  text: string;
+  title: string;
   children: JSX.Element;
 }) => {
   return (
@@ -13,8 +13,8 @@ const IconLink = ({
       className="group"
       target="_blank"
       rel="noopener noreferrer"
-      aria-label={`Ir a ${text}`}
-      title={`Ir a ${text}`}
+      aria-label={title}
+      title={title}
     >
       {children}
     </a>

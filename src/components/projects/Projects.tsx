@@ -9,7 +9,7 @@ import { ProjectData } from "./ProjectData.ts";
 import { CodeIcon } from "../../Icons/Icons";
 
 const Projects = () => {
-  const cardsInitially = 4;
+  const cardsInitially = 6;
 
   const [visibleCards, setVisibleCards] = useState<number>(cardsInitially);
 
@@ -55,18 +55,18 @@ const Projects = () => {
       </article>
       {visibleCards < ProjectData.length ? (
         <button
-          className="mt-20 text-lg block mx-auto text-light_text dark:text-dark_text hover:text-primary dark:hover:text-primary transition-all duration-200 ease-in-out"
+          className="mt-10 text-lg block mx-auto text-light_text dark:text-dark_text hover:text-primary dark:hover:text-primary transition-all duration-200 ease-in-out"
           onClick={ShowMore}
           aria-label="Mostrar más proyectos"
           title="Mostrar más proyectos"
         >
           Mostrar más
         </button>
-      ) : (
-        <p className="mt-20 w-max block mx-auto text-light_text_secondary dark:text-dark_text_secondary">
+      ) : cardsInitially > 6 ? (
+        <p className="mt-10 w-max block mx-auto text-light_text_secondary dark:text-dark_text_secondary">
           No hay más resultados
         </p>
-      )}
+      ) : null}
     </section>
   );
 };

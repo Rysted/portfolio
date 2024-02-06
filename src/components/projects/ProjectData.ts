@@ -3,7 +3,7 @@ export const ProjectData = [
     image: "moon.webp",
     title: "Moon - Backend",
     description:
-      "Este proyecto destaca por su enfoque en el desarrollo backend y su utilización de herramientas modernas para ofrecer funcionalidades eficientes y seguras.",
+      "Proyecto de backend que, aprovechando herramientas modernas, garantiza un rendimiento óptimo y una mayor seguridad.",
     tags: ["JavaScript", "Express", "MySQL", "Zod", "Multer"],
     code: "https://github.com/Rysted/Moon_backend",
     demo: "",
@@ -16,6 +16,15 @@ export const ProjectData = [
     tags: ["HTML", "CSS", "JavaScript", "React", "React Router"],
     code: "https://github.com/Rysted/utn-moon-front",
     demo: "",
+  },
+  {
+    image: "mouseReact.webp",
+    title: "Mouse events",
+    description:
+      "Este proyecto de React+Vite presenta un controlador de mouse interactivo con animaciones y efectos visuales.",
+    tags: ["HTML", "CSS", "JavaScript", "React"],
+    code: "https://github.com/Rysted/mouse-events",
+    demo: "https://mouse-react.netlify.app/",
   },
   {
     image: "mrcoffee.webp",
@@ -45,14 +54,5 @@ export const ProjectData = [
     tags: ["HTML", "CSS", "JavaScript", "React"],
     code: "https://github.com/Rysted/old-portfolio",
     demo: "https://stellular-creponne-a706db.netlify.app/",
-  },
-  {
-    image: "mouseReact.webp",
-    title: "Mouse events",
-    description:
-      "Este proyecto de React+Vite presenta un controlador de mouse interactivo con animaciones y efectos visuales.",
-    tags: ["HTML", "CSS", "JavaScript", "React"],
-    code: "https://github.com/Rysted/mouse-events",
-    demo: "https://mouse-react.netlify.app/",
   },
 ];

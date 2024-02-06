@@ -11,12 +11,15 @@ const Footer = () => {
           <span className="text-sm">© 2024 - Rysted</span>
           <IconLink
             url="https://www.linkedin.com/in/marcelo-sebastian-suarez"
-            text="LinkedIn"
+            title="Ir a mi perfil de LinkedIn"
           >
             <LinkedIn hover={true} styles="w-5 h-5 fill-light_text" />
           </IconLink>
 
-          <IconLink url="https://github.com/Rysted" text="GitHub">
+          <IconLink
+            url="https://github.com/Rysted"
+            title="Ir a mi perfil de GitHub"
+          >
             <GitHub hover={true} styles="w-5 h-5 fill-light_text" />
           </IconLink>
         </div>

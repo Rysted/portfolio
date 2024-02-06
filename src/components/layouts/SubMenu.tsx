@@ -15,22 +15,28 @@ const SubMenu = () => {
   return (
     <>
       <button
-        className="group flex justify-between items-center w-full py-2 transition-all duration-200 ease-in-out"
+        className="group flex justify-between items-center w-full p-2 gap-x-1"
         onClick={toggleSubMenu}
         aria-label="Abrir submenú de Sobre mí"
       >
-        <div className="flex items-center gap-x-3">
-          <ColorPicker hover={true} />
-          <span className="max-h-5 text-base font-semibold dark:text-dark_text group-hover:text-primary_hover transition-all duration-200 ease-in-out">
-            Cambiar Estilo
+        <div className="flex items-center gap-x-4">
+          <ColorPicker hover={true} subMenu={subMenu} />
+          <span
+            className={`max-h-5 text-base font-semibold ${
+              subMenu
+                ? "text-light_text dark:text-dark_text"
+                : "text-secondary-700 dark:text-secondary-300"
+            } group-hover:text-primary-600 dark:group-hover:text-primary-300 transition-all duration-200 ease-in-out`}
+          >
+            Tema
           </span>
         </div>
         <NavArrowDown hover={true} subMenu={subMenu} />
       </button>
       <div
         className={`${
-          subMenu ? "h-24" : "h-0"
-        } px-3 overflow-hidden flex flex-col justify-center gap-1 bg-light_background dark:bg-dark_background rounded-xl transition-all duration-200 ease-in-out`}
+          subMenu ? "h-24 py-2" : "h-0"
+        } px-2 overflow-hidden flex flex-col justify-center gap-1 transition-height duration-200 ease-in-out`}
       >
         <Theme />
       </div>

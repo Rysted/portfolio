@@ -13,7 +13,7 @@ export const LogoTipo = () => {
   );
 };
 
-export const Burger = ({ hover }: { hover: boolean }) => {
+export const Burger = () => {
   return (
     <svg
       width="40"
@@ -24,9 +24,7 @@ export const Burger = ({ hover }: { hover: boolean }) => {
       stroke="black"
       strokeWidth="4"
       strokeLinecap="round"
-      className={`${
-        hover && "group-hover:stroke-primary_hover"
-      } dark:stroke-dark_text transition-all duration-200 ease-in-out`}
+      className="group-hover:stroke-primary-600 dark:group-hover:stroke-primary-300 dark:stroke-dark_text transition-all duration-200 ease-in-out"
     >
       <path d="M5 8.33333H35" />
       <path d="M5 20H35" />
@@ -35,7 +33,7 @@ export const Burger = ({ hover }: { hover: boolean }) => {
   );
 };
 
-export const Close = ({ hover }: { hover: boolean }) => {
+export const Close = () => {
   return (
     <svg
       width="40"
@@ -46,9 +44,7 @@ export const Close = ({ hover }: { hover: boolean }) => {
       stroke="black"
       strokeWidth="4"
       strokeLinecap="round"
-      className={`${
-        hover && "group-hover:stroke-primary_hover"
-      } dark:stroke-dark_text transition-all duration-200 ease-in-out`}
+      className="group-hover:stroke-primary-600 dark:group-hover:stroke-primary-300 dark:stroke-dark_text transition-all duration-200 ease-in-out"
     >
       <path d="M9 31L31 9" />
       <path d="M9 9L31 31" />
@@ -56,7 +52,7 @@ export const Close = ({ hover }: { hover: boolean }) => {
   );
 };
 
-export const Home = ({ hover }: { hover: boolean }) => {
+export const Home = ({ active }: { active?: boolean }) => {
   return (
     <svg
       width="20"
@@ -69,8 +65,10 @@ export const Home = ({ hover }: { hover: boolean }) => {
       strokeLinecap="round"
       strokeLinejoin="round"
       className={`${
-        hover && "group-hover:stroke-primary_hover"
-      } dark:stroke-dark_text transition-all duration-200 ease-in-out`}
+        active
+          ? "stroke-primary-600 dark:stroke-primary-300"
+          : "stroke-secondary-700 dark:stroke-secondary-300"
+      } group-hover:stroke-primary-600 dark:group-hover:stroke-primary-300 transition-all duration-200 ease-in-out`}
     >
       <path d="M10 18V15C10 13.8954 10.8954 13 12 13V13C13.1046 13 14 13.8954 14 15V18"></path>
       <path d="M2 8L11.7317 3.13416C11.9006 3.04971 12.0994 3.0497 12.2683 3.13416L22 8"></path>
@@ -81,9 +79,11 @@ export const Home = ({ hover }: { hover: boolean }) => {
 
 export const ServicesIcon = ({
   hover,
+  active,
   styles,
 }: {
   hover?: boolean;
+  active?: boolean;
   styles?: string;
 }) => {
   return (
@@ -96,9 +96,14 @@ export const ServicesIcon = ({
       stroke="black"
       strokeWidth="2"
       strokeLinejoin="round"
-      className={`${hover && "group-hover:stroke-primary_hover"} ${
-        styles && styles
-      } dark:stroke-dark_text transition-all duration-200 ease-in-out`}
+      className={`${
+        hover &&
+        "group-hover:stroke-primary-600 dark:group-hover:stroke-primary-300"
+      } ${
+        active
+          ? "stroke-primary-600 dark:stroke-primary-300"
+          : "stroke-secondary-700 dark:stroke-secondary-300"
+      } ${styles && styles} transition-all duration-200 ease-in-out`}
     >
       <path d="M8 15C12.8747 15 15 12.949 15 8C15 12.949 17.1104 15 22 15C17.1104 15 15 17.1104 15 22C15 17.1104 12.8747 15 8 15Z"></path>
       <path d="M2 6.5C5.13376 6.5 6.5 5.18153 6.5 2C6.5 5.18153 7.85669 6.5 11 6.5C7.85669 6.5 6.5 7.85669 6.5 11C6.5 7.85669 5.13376 6.5 2 6.5Z"></path>
@@ -106,7 +111,91 @@ export const ServicesIcon = ({
   );
 };
 
-export const ColorPicker = ({ hover }: { hover: boolean }) => {
+export const CodeIcon = ({
+  hover,
+  active,
+  styles,
+}: {
+  hover?: boolean;
+  active?: boolean;
+  styles?: string;
+}) => {
+  return (
+    <svg
+      width="20"
+      height="20"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      stroke="black"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className={`${
+        hover &&
+        "group-hover:stroke-primary-600 dark:group-hover:stroke-primary-300"
+      } ${
+        active
+          ? "stroke-primary-600 dark:stroke-primary-300"
+          : "stroke-secondary-700 dark:stroke-secondary-300"
+      } ${styles && styles} transition-all duration-200 ease-in-out`}
+    >
+      <path d="M13.5 6L10 18.5"></path>
+      <path d="M6.5 8.5L3 12L6.5 15.5"></path>
+      <path d="M17.5 8.5L21 12L17.5 15.5"></path>
+    </svg>
+  );
+};
+
+export const BookCode = ({
+  hover,
+  active,
+  styles,
+}: {
+  hover?: boolean;
+  active?: boolean;
+  styles?: string;
+}) => {
+  return (
+    <svg
+      width="20"
+      height="20"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      stroke="black"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      className={`${
+        hover &&
+        "group-hover:stroke-primary-600 dark:group-hover:stroke-primary-300"
+      } ${
+        active
+          ? "stroke-primary-600 dark:stroke-primary-300"
+          : "stroke-secondary-700 dark:stroke-secondary-300"
+      } ${
+        styles && styles
+      } stroke-primary-600  dark:stroke-primary-300 transition-all duration-200 ease-in-out`}
+    >
+      <path d="M4 19V5C4 3.89543 4.89543 3 6 3H19.4C19.7314 3 20 3.26863 20 3.6V16.7143" />
+      <path d="M6 17H20" />
+      <path d="M6 21C6 21 19 21 20 21" />
+      <path d="M6 21C4.89543 21 4 20.1046 4 19C4 17.8954 4.89543 17 6 17" />
+      <path d="M12.75 7L11 13.25" strokeWidth="1" />
+      <path d="M9.25 8.25L7.5 10L9.25 11.75" strokeWidth="1" />
+      <path d="M14.75 8.25L16.5 10L14.75 11.75" strokeWidth="1" />
+    </svg>
+  );
+};
+
+export const ColorPicker = ({
+  hover,
+  subMenu,
+}: {
+  hover: boolean;
+  subMenu: boolean;
+}) => {
   return (
     <svg
       width="20"
@@ -119,8 +208,13 @@ export const ColorPicker = ({ hover }: { hover: boolean }) => {
       strokeLinecap="round"
       strokeLinejoin="round"
       className={`${
-        hover && "group-hover:stroke-primary_hover"
-      } dark:stroke-dark_text transition-all duration-200 ease-in-out`}
+        subMenu
+          ? "stroke-light_text dark:stroke-dark_text"
+          : "stroke-secondary-700 dark:stroke-secondary-300"
+      } ${
+        hover &&
+        "group-hover:stroke-primary-600 dark:group-hover:stroke-primary-300"
+      } transition-all duration-200 ease-in-out`}
     >
       <path d="M7 13.161L12.4644 7.6966C12.8549 7.30607 13.4881 7.30607 13.8786 7.6966L15.9999 9.81792C16.3904 10.2084 16.3904 10.8416 15.9999 11.2321L14.0711 13.161M7 13.161L4.82764 15.3334C4.73428 15.4267 4.66034 15.5376 4.61007 15.6597L3.58204 18.1563C3.07438 19.3892 4.30728 20.6221 5.54018 20.1145L8.03681 19.0865C8.1589 19.0362 8.26981 18.9622 8.36317 18.8689L14.0711 13.161M7 13.161H14.0711"></path>
       <path d="M13.878 3.45401L15.9993 5.57533M20.242 9.81798L18.1206 7.69666M15.9993 5.57533L17.4135 4.16112C17.8041 3.7706 18.4372 3.7706 18.8277 4.16112L19.5349 4.86823C19.9254 5.25875 19.9254 5.89192 19.5349 6.28244L18.1206 7.69666M15.9993 5.57533L18.1206 7.69666"></path>
@@ -145,96 +239,16 @@ export const NavArrowDown = ({
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
-      className={`${subMenu && "rotate-180"} ${
-        hover && "group-hover:stroke-primary_hover"
-      } dark:stroke-dark_text transition-all duration-200 ease-in-out`}
+      className={`${
+        subMenu
+          ? "rotate-180 stroke-light_text dark:stroke-dark_text"
+          : "stroke-secondary-700 dark:stroke-secondary-300"
+      } ${
+        hover &&
+        "group-hover:stroke-primary-600 dark:group-hover:stroke-primary-300"
+      } transition-all duration-200 ease-in-out`}
     >
       <path d="M6 9L12 15L18 9"></path>
-    </svg>
-  );
-};
-
-export const CodeIcon = ({
-  hover,
-  styles,
-}: {
-  hover?: boolean;
-  styles?: string;
-}) => {
-  return (
-    <svg
-      width="20"
-      height="20"
-      viewBox="0 0 24 24"
-      xmlns="http://www.w3.org/2000/svg"
-      fill="none"
-      stroke="black"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      className={`${hover && "group-hover:stroke-primary_hover"} ${
-        styles && styles
-      } dark:stroke-dark_text transition-all duration-200 ease-in-out`}
-    >
-      <path d="M13.5 6L10 18.5"></path>
-      <path d="M6.5 8.5L3 12L6.5 15.5"></path>
-      <path d="M17.5 8.5L21 12L17.5 15.5"></path>
-    </svg>
-  );
-};
-
-export const BookCode = ({
-  hover,
-  styles,
-}: {
-  hover?: boolean;
-  styles?: string;
-}) => {
-  return (
-    <svg
-      width="20"
-      height="20"
-      viewBox="0 0 24 24"
-      xmlns="http://www.w3.org/2000/svg"
-      fill="none"
-      stroke="black"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      className={`${hover && "group-hover:stroke-primary_hover"} ${
-        styles && styles
-      } dark:stroke-dark_text transition-all duration-200 ease-in-out`}
-    >
-      <path d="M4 19V5C4 3.89543 4.89543 3 6 3H19.4C19.7314 3 20 3.26863 20 3.6V16.7143" />
-      <path d="M6 17H20" />
-      <path d="M6 21C6 21 19 21 20 21" />
-      <path d="M6 21C4.89543 21 4 20.1046 4 19C4 17.8954 4.89543 17 6 17" />
-      <path d="M12.75 7L11 13.25" strokeWidth="1" />
-      <path d="M9.25 8.25L7.5 10L9.25 11.75" strokeWidth="1" />
-      <path d="M14.75 8.25L16.5 10L14.75 11.75" strokeWidth="1" />
-    </svg>
-  );
-};
-
-export const Formation = ({ hover }: { hover: boolean }) => {
-  return (
-    <svg
-      width="20"
-      height="20"
-      viewBox="0 0 24 24"
-      xmlns="http://www.w3.org/2000/svg"
-      fill="none"
-      stroke="black"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      className={`${
-        hover && "group-hover:stroke-primary_hover"
-      } dark:stroke-dark_text transition-all duration-200 ease-in-out`}
-    >
-      <path d="M0 0h24v24H0z" stroke="none"></path>
-      <path d="M22 9l-10 -4l-10 4l10 4l10 -4v6"></path>
-      <path d="M6 10.6v5.4a6 3 0 0 0 12 0v-5.4"></path>
     </svg>
   );
 };
@@ -251,8 +265,11 @@ export const Sun = ({ hover, theme }: { hover: boolean; theme: boolean }) => {
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
-      className={`${theme ? "stroke-primary" : "dark:stroke-dark_text"} ${
-        hover && "group-hover:stroke-primary_hover"
+      className={`${
+        theme ? "stroke-primary-600" : "dark:stroke-secondary-300"
+      } ${
+        hover &&
+        "group-hover:stroke-primary-600 dark:group-hover:stroke-primary-300"
       } transition-all duration-200 ease-in-out`}
     >
       <path d="M12 18C15.3137 18 18 15.3137 18 12C18 8.68629 15.3137 6 12 6C8.68629 6 6 8.68629 6 12C6 15.3137 8.68629 18 12 18Z"></path>
@@ -280,8 +297,11 @@ export const Moon = ({ hover, theme }: { hover: boolean; theme: boolean }) => {
       strokeWidth="2"
       strokeLinecap="round"
       strokeLinejoin="round"
-      className={`${theme ? "stroke-primary" : "dark:stroke-dark_text"} ${
-        hover && "group-hover:stroke-primary_hover"
+      className={`${
+        theme ? "dark:stroke-primary-300" : "stroke-secondary-700"
+      } ${
+        hover &&
+        "group-hover:stroke-primary-600 dark:group-hover:stroke-primary-300"
       } transition-all duration-200 ease-in-out`}
     >
       <path d="M3 11.5066C3 16.7497 7.25034 21 12.4934 21C16.2209 21 19.4466 18.8518 21 15.7259C12.4934 15.7259 8.27411 11.5066 8.27411 3C5.14821 4.55344 3 7.77915 3 11.5066Z"></path>
@@ -298,13 +318,14 @@ export const LinkedIn = ({
 }) => {
   return (
     <svg
-      width="20"
-      height="20"
+      width="24"
+      height="24"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
       fill="white"
-      className={`${styles && styles} ${
-        hover && "group-hover:fill-primary"
+      className={`h-5 ${styles && styles} ${
+        hover &&
+        "group-hover:fill-primary-600 dark:group-hover:fill-primary-300"
       } dark:fill-dark_text transition-all duration-200 ease-in-out`}
     >
       <g clipPath="url(#clip0_170_328)">
@@ -328,14 +349,15 @@ export const GitHub = ({
 }) => {
   return (
     <svg
-      width="20"
-      height="20"
+      width="24"
+      height="24"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
       fill="white"
-      className={`${styles && styles} ${
-        hover && "group-hover:fill-primary"
-      } dark:fill-dark_text transition-all duration-200 ease-in-out`}
+      className={`h-5 dark:fill-dark_text ${styles && styles} ${
+        hover &&
+        "group-hover:fill-primary-600 dark:group-hover:fill-primary-300"
+      } transition-all duration-200 ease-in-out`}
     >
       <g clipPath="url(#clip0_170_345)">
         <path d="M12.0001 2C6.47789 2 2 6.47711 2 12.0001C2 16.4184 4.86531 20.1669 8.83867 21.4891C9.33844 21.5817 9.52195 21.2722 9.52195 21.008C9.52195 20.7696 9.51258 19.9819 9.50836 19.1463C6.72633 19.7512 6.1393 17.9664 6.1393 17.9664C5.68438 16.8105 5.02891 16.5031 5.02891 16.5031C4.12164 15.8825 5.09734 15.8953 5.09734 15.8953C6.10148 15.9658 6.63023 16.9258 6.63023 16.9258C7.52219 18.4545 8.96969 18.0126 9.54031 17.757C9.63008 17.1108 9.88922 16.6695 10.1752 16.4198C7.95406 16.167 5.61914 15.3095 5.61914 11.4778C5.61914 10.386 6.00977 9.49391 6.64945 8.79359C6.54563 8.54172 6.20336 7.52469 6.74633 6.14719C6.74633 6.14719 7.58609 5.87844 9.49711 7.17227C10.2948 6.9507 11.1502 6.83961 12.0001 6.83578C12.8499 6.83961 13.7061 6.95063 14.5052 7.17227C16.4139 5.87852 17.2525 6.14727 17.2525 6.14727C17.7968 7.52461 17.4544 8.5418 17.3505 8.79359C17.9917 9.49391 18.3797 10.386 18.3797 11.4778C18.3797 15.3187 16.0403 16.1644 13.8135 16.412C14.1722 16.7223 14.4918 17.3309 14.4918 18.2638C14.4918 19.6018 14.4802 20.6787 14.4802 21.008C14.4802 21.2742 14.6602 21.586 15.1671 21.4877C19.1383 20.1641 22 16.417 22 12.0002C22 6.47711 17.5227 2 12.0001 2ZM5.74539 16.2453C5.72336 16.295 5.64516 16.3099 5.57398 16.2758C5.50141 16.2432 5.4607 16.1755 5.48414 16.1256C5.5057 16.0745 5.58406 16.0602 5.65641 16.0945C5.72906 16.1271 5.77047 16.1955 5.74539 16.2453ZM6.23727 16.6842C6.18961 16.7284 6.09633 16.7079 6.03305 16.638C5.96766 16.5684 5.95539 16.4751 6.00375 16.4302C6.05297 16.386 6.14336 16.4067 6.20891 16.4764C6.27438 16.547 6.28703 16.6395 6.23727 16.6842ZM6.57477 17.2458C6.51344 17.2884 6.41328 17.2484 6.35133 17.1595C6.29008 17.0706 6.29008 16.964 6.35266 16.9213C6.41477 16.8785 6.51344 16.917 6.57617 17.0052C6.63727 17.0956 6.63727 17.2023 6.57469 17.2459L6.57477 17.2458ZM7.14539 17.8962C7.09063 17.9566 6.97383 17.9404 6.88836 17.8579C6.80094 17.7773 6.77664 17.6629 6.83164 17.6024C6.88711 17.5418 7.00453 17.5588 7.09063 17.6407C7.17734 17.7212 7.20391 17.8364 7.14539 17.8962ZM7.88305 18.1157C7.85883 18.1941 7.74633 18.2297 7.63312 18.1964C7.52 18.1621 7.44602 18.0704 7.46883 17.9913C7.49234 17.9123 7.60531 17.8753 7.71938 17.9109C7.83234 17.945 7.90656 18.036 7.88305 18.1157ZM8.72242 18.2089C8.72523 18.2913 8.62922 18.3597 8.51031 18.3612C8.39078 18.3639 8.29398 18.2972 8.29266 18.2159C8.29266 18.1327 8.38656 18.065 8.50617 18.063C8.62508 18.0606 8.72242 18.1269 8.72242 18.2089ZM9.54703 18.1773C9.56125 18.2577 9.47867 18.3404 9.36055 18.3624C9.24453 18.3836 9.13703 18.3339 9.12227 18.2541C9.10789 18.1716 9.19203 18.089 9.30789 18.0677C9.42617 18.0471 9.53195 18.0955 9.54703 18.1773Z" />
@@ -352,17 +374,14 @@ export const GitHub = ({
 export const Gmail = () => {
   return (
     <svg
-      width="25"
-      height="16"
+      width="24"
+      height="24"
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
       fill="white"
+      className="h-5"
     >
-      <path d="M2.90916 22.9999H7.36373V11.6694L1 6.67065V21.0005C1 22.1052 1.85434 23 2.90916 23V22.9999Z" />
-      <path d="M22.6362 22.9999H27.0909C28.1456 22.9999 29 22.1051 29 21.0004V6.67065L22.6362 11.6694V22.9999Z" />
-      <path d="M22.6362 3.00487V11.6694L29 6.67062V4.00465C29 1.53359 26.3066 0.122273 24.4181 1.60524L22.6362 3.00487Z" />
-      <path d="M7.36377 11.6694V3.00488L15.0002 9.00343L22.6366 3.00488V11.6694L15.0002 17.6679L7.36377 11.6694Z" />
-      <path d="M1 4.00465V6.67062L7.36373 11.6694V3.00487L5.58188 1.60524C3.69339 0.122276 1 1.53359 1 4.00453V4.00465Z" />
+      <path d="M6.00007 21H2.50005C1.67127 21 1 20.268 1 19.3641V7.63965V5.45836C1 3.43667 3.11623 2.28186 4.60004 3.4952L6.0001 4.64037L12.0001 9.54829L17.9999 4.64036L19.3999 3.4952C20.8838 2.28186 23 3.43658 23 5.45836V7.63965V19.364C23 20.2679 22.3287 21 21.5 21H17.9999V11.7296L12.0001 16.6374L6.00007 11.7296V21Z" />
     </svg>
   );
 };
@@ -375,6 +394,7 @@ export const WhatsApp = () => {
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
       fill="white"
+      className="h-5"
     >
       <path
         fillRule="evenodd"

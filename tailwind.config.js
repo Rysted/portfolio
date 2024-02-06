@@ -8,9 +8,32 @@ export default {
     },
     extend: {
       colors: {
-        primary: "#5657FF",
-        primary_hover: "#3A3AFF",
-        primary_dark: "#6D72FF",
+        primary: {
+          100: "rgba(29, 115, 235, 0.1)",
+          200: "#4ab0ff",
+          300: "#0093ff",
+          400: "#007acc",
+          500: "#1F6FEB",
+          600: "#1455b3",
+          700: "#121D2F",
+          800: "#0b0e17",
+          900: "#05080c",
+        },
+
+        secondary: {
+          100: "#F7F7F7",
+          200: "#E5E5E5",
+          300: "#CCCCCC",
+          400: "#B3B3B3",
+          500: "#999999",
+          600: "#808080",
+          700: "#666666",
+          800: "#4D4D4D",
+          900: "#333333",
+        },
+
+        primary_hover: "",
+        primary_dark: "",
 
         light_text: "#000000",
         light_text_secondary: "#555555",
