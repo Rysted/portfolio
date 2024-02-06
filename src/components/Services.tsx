@@ -10,7 +10,7 @@ import {
 
 const Services = () => {
   return (
-    <section id="services" className="px-5 py-20 select-none">
+    <section id="services" className="px-5 pt-40 pb-20 select-none">
       <header className="flex justify-start items-center gap-x-2 md:max-w-[800px] lg:max-w-[1100px] mx-auto">
         {" "}
         <ServicesIcon styles="w-8 h-8" />

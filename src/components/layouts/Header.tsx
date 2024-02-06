@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState, useEffect } from "react";
 
 import NavMenu from "./NavMenu";
 
@@ -7,9 +7,11 @@ import { LogoTipo, Burger, Close } from "../../Icons/Icons";
 
 const Header = () => {
   const [isOpenMenu, setIsOpenMenu] = useState<boolean>(false);
+  const [activeLink, setActiveLink] = useState("");
 
   const toggleSidebar = () => {
     setIsOpenMenu(!isOpenMenu);
+    document.body.classList.toggle("body_overflow");
   };
 
   const closeSidebar = () => {
@@ -17,24 +19,30 @@ const Header = () => {
   };
 
   useEffect(() => {
-    const lgBreakpoint: number = 1024;
+    const handleScroll = () => {
+      const sections = document.querySelectorAll("section");
 
-    const handleResize = () => {
-      if (window.innerWidth >= lgBreakpoint) {
-        document.body.style.overflowY = "scroll";
-      } else {
-        document.body.style.overflowY = isOpenMenu ? "hidden" : "scroll";
-      }
+      sections.forEach((section) => {
+        const top = section.offsetTop;
+        const height = section.offsetHeight;
+        const id = section.id;
+
+        console.log(top, height, id);
+
+        if (window.scrollY >= top - 100 && window.scrollY < top + height) {
+          setActiveLink(id);
+        }
+      });
     };
 
-    handleResize();
+    setActiveLink("home");
 
-    window.addEventListener("resize", handleResize);
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener("resize", handleResize);
+      window.removeEventListener("scroll", handleScroll);
     };
-  }, [isOpenMenu]);
+  }, []);
 
   return (
     <header className="relative overflow-x-hidden select-none">
@@ -64,7 +72,7 @@ const Header = () => {
             <LogoTipo />
           </div>
 
-          <NavMenu closeSidebar={closeSidebar} />
+          <NavMenu closeSidebar={closeSidebar} active={activeLink} />
         </div>
       </div>
     </header>
