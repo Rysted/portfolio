@@ -126,7 +126,6 @@ export const CodeIcon = ({
   styles?: string;
   colors?: boolean;
 }) => {
-  console.log(hover, active, styles, colors);
   return (
     <svg
       width="20"
