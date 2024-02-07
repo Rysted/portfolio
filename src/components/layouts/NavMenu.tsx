@@ -12,7 +12,7 @@ const NavMenu = ({
   active: string;
 }) => {
   return (
-    <nav className="py-5">
+    <nav className="relative h-screen pb-24 z-10 lg:h-auto overflow-y-auto lg:py-5">
       <ul className="flex flex-col gap-y-2 px-4">
         <li>
           <MenuItem

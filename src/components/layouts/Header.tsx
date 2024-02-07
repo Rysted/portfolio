@@ -81,8 +81,8 @@ const Header = () => {
           isOpenMenu ? "right-0" : "-right-64"
         } w-60 top-20 lg:top-0 lg:right-0 lg:pt-5 lg:pr-5 flex-col justify-start font-poppins z-10 transition-all duration-200 ease-in-out`}
       >
-        <div className=" h-screen overflow-y-auto lg:rounded-xl lg:h-max bg-light_highlight dark:bg-dark_highlight transition-all duration-200 ease-in-out">
-          <div className="opacity-0 w-0 h-0 my-0 lg:w-full lg:flex lg:justify-center lg:h-auto lg:opacity-100 lg:pt-8 lg:pb-5">
+        <div className="lg:relative lg:before:content-[''] lg:before:absolute lg:before:w-20 lg:before:h-screen lg:before:bg-gradient-to-r lg:before:from-cyan-500 lg:before:to-blue-500 lg:before:left-[70px] lg:before:-top-52 lg:before:animate-spin lg:after:content-[''] lg:after:absolute lg:after:bg-light_highlight lg:dark:after:bg-dark_highlight lg:after:inset-1 lg:after:rounded-lg lg:rounded-xl lg:h-max h-screen overflow-hidden bg-light_highlight dark:bg-dark_highlight transition-all duration-200 ease-in-out lg:after:transition-all lg:after:duration-200 lg:after:ease-in-out">
+          <div className="relative z-10 opacity-0 w-0 h-0 my-0 lg:w-full lg:flex lg:justify-center lg:h-auto lg:opacity-100 lg:pt-8 lg:pb-5">
             <LogoTipo />
           </div>
 

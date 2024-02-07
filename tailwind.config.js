@@ -7,6 +7,9 @@ export default {
       poppins: ["Poppins", "sans-serif"],
     },
     extend: {
+      animation: {
+        spin: "spin 5s linear infinite",
+      },
       colors: {
         primary: {
           100: "rgba(29, 115, 235, 0.1)",
