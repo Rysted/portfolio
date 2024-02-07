@@ -28,8 +28,6 @@ const Header = () => {
         const height = section.offsetHeight;
         const id = section.id;
 
-        console.log(top, height, id);
-
         if (window.scrollY >= top - 100 && window.scrollY < top + height) {
           setActiveLink(id);
         }

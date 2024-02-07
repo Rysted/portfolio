@@ -53,7 +53,6 @@ export const Close = () => {
 };
 
 export const Home = ({ active }: { active?: boolean }) => {
-  console.log(active);
   return (
     <svg
       width="20"

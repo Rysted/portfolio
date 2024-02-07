@@ -1,5 +1,14 @@
 export const ProjectData = [
   {
+    image: "newPortfolio.webp",
+    title: "Portfolio",
+    description:
+      "Este es mi nuevo portafolio, aquí podrás encontrar una selección de mis proyectos más recientes y mi información de contacto.",
+    tags: ["HTML", "React", "TypeScript", "Tailwind CSS"],
+    code: "",
+    demo: "https://rysted.netlify.app/",
+  },
+  {
     image: "moon.webp",
     title: "Moon - Backend",
     description:
