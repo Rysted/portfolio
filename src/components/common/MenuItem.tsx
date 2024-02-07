@@ -2,13 +2,13 @@ const MenuItem = ({
   url,
   children,
   text,
-  closeSidebar,
+  disableSidebar,
   active,
 }: {
   url: string;
   children: JSX.Element;
   text: string;
-  closeSidebar: () => void;
+  disableSidebar: () => void;
   active?: boolean;
 }) => {
   return (
@@ -17,7 +17,7 @@ const MenuItem = ({
       rel="noopener noreferrer"
       aria-label="Ir a {text}"
       title={`Ir a ${text}`}
-      onClick={closeSidebar}
+      onClick={disableSidebar}
       className={`group flex items-center gap-x-4 p-2 rounded-lg ${
         active && "bg-primary-100 dark:bg-primary-700"
       }`}

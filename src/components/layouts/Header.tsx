@@ -19,10 +19,6 @@ const Header = () => {
     document.body.classList.remove("body_overflow");
   };
 
-  const closeSidebar = () => {
-    setIsOpenMenu(false);
-  };
-
   useEffect(() => {
     const handleScroll = () => {
       const sections = document.querySelectorAll("section");
@@ -77,20 +73,20 @@ const Header = () => {
           isOpenMenu
             ? "right-0 opacity-30 blur-md"
             : "-right-full opacity-0 pointer-events-none"
-        } lg:hidden w-full h-full overflow-y-scroll bg-dark_background dark:bg-light_background transition-all duration-200 ease-in-out`}
+        } lg:hidden w-full h-full overflow-y-scroll bg-dark_background dark:bg-light_background transition-all duration-300 ease-in-out`}
         onClick={disableSidebar}
       ></span>
       <div
         className={`bg-transparent fixed z-20 ${
           isOpenMenu ? "right-0" : "-right-64"
-        } w-60 top-20 lg:top-0 lg:right-0 lg:pt-5 lg:pr-5 flex-col justify-start font-poppins z-10`}
+        } w-60 top-20 lg:top-0 lg:right-0 lg:pt-5 lg:pr-5 flex-col justify-start font-poppins z-10 transition-all duration-200 ease-in-out`}
       >
-        <div className=" h-svh overflow-y-auto lg:rounded-xl lg:h-max bg-light_highlight dark:bg-dark_highlight transition-all duration-200 ease-in-out">
+        <div className=" h-screen overflow-y-auto lg:rounded-xl lg:h-max bg-light_highlight dark:bg-dark_highlight transition-all duration-200 ease-in-out">
           <div className="opacity-0 w-0 h-0 my-0 lg:w-full lg:flex lg:justify-center lg:h-auto lg:opacity-100 lg:pt-8 lg:pb-5">
             <LogoTipo />
           </div>
 
-          <NavMenu closeSidebar={closeSidebar} active={activeLink} />
+          <NavMenu disableSidebar={disableSidebar} active={activeLink} />
         </div>
       </div>
     </header>

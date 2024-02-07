@@ -5,10 +5,10 @@ import SubMenu from "./SubMenu";
 import { BookCode, CodeIcon, Home, ServicesIcon } from "../../Icons/Icons";
 
 const NavMenu = ({
-  closeSidebar,
+  disableSidebar,
   active,
 }: {
-  closeSidebar: () => void;
+  disableSidebar: () => void;
   active: string;
 }) => {
   return (
@@ -18,7 +18,7 @@ const NavMenu = ({
           <MenuItem
             url="#home"
             text="Inicio"
-            closeSidebar={closeSidebar}
+            disableSidebar={disableSidebar}
             active={active === "home"}
           >
             <Home active={active === "home"} />
@@ -28,7 +28,7 @@ const NavMenu = ({
           <MenuItem
             url="#services"
             text="Servicios"
-            closeSidebar={closeSidebar}
+            disableSidebar={disableSidebar}
             active={active === "services"}
           >
             <ServicesIcon hover={true} active={active === "services"} />
@@ -38,7 +38,7 @@ const NavMenu = ({
           <MenuItem
             url="#projects"
             text="Proyectos"
-            closeSidebar={closeSidebar}
+            disableSidebar={disableSidebar}
             active={active === "projects"}
           >
             <CodeIcon hover={true} active={active === "projects"} />
@@ -48,7 +48,7 @@ const NavMenu = ({
           <MenuItem
             url="#skills"
             text="Habilidades"
-            closeSidebar={closeSidebar}
+            disableSidebar={disableSidebar}
             active={active === "skills"}
           >
             <BookCode hover={true} active={active === "skills"} />
