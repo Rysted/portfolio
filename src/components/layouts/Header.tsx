@@ -9,9 +9,14 @@ const Header = () => {
   const [isOpenMenu, setIsOpenMenu] = useState<boolean>(false);
   const [activeLink, setActiveLink] = useState("");
 
-  const toggleSidebar = () => {
-    setIsOpenMenu(!isOpenMenu);
-    document.body.classList.toggle("body_overflow");
+  const enableSidebar = () => {
+    setIsOpenMenu(true);
+    document.body.classList.add("body_overflow");
+  };
+
+  const disableSidebar = () => {
+    setIsOpenMenu(false);
+    document.body.classList.remove("body_overflow");
   };
 
   const closeSidebar = () => {
@@ -48,22 +53,35 @@ const Header = () => {
     <header className="relative overflow-x-hidden select-none">
       <div className="lg:hidden fixed z-20 top-0 w-full h-20 flex justify-between items-center px-5 bg-light_highlight dark:bg-dark_highlight transition-all duration-200 ease-in-out shadow-light_bottom dark:shadow-dark_bottom">
         <LogoTipo />
-        <button
-          onClick={toggleSidebar}
-          className="group"
-          aria-label="Abrir menú"
-        >
-          {isOpenMenu ? <Close /> : <Burger />}
-        </button>
+
+        {isOpenMenu ? (
+          <button
+            onClick={disableSidebar}
+            className="group"
+            aria-label="Abrir menú"
+          >
+            <Close />
+          </button>
+        ) : (
+          <button
+            onClick={enableSidebar}
+            className="group"
+            aria-label="Abrir menú"
+          >
+            <Burger />
+          </button>
+        )}
       </div>
       <span
         className={`fixed z-10 cursor-pointer ${
-          isOpenMenu ? " opacity-30 blur-md" : "opacity-0 pointer-events-none"
-        }  lg:hidden w-full h-full overflow-y-scroll bg-dark_background dark:bg-light_background transition-all duration-200 ease-in-out`}
-        onClick={toggleSidebar}
+          isOpenMenu
+            ? "right-0 opacity-30 blur-md"
+            : "-right-full opacity-0 pointer-events-none"
+        } lg:hidden w-full h-full overflow-y-scroll bg-dark_background dark:bg-light_background transition-all duration-200 ease-in-out`}
+        onClick={disableSidebar}
       ></span>
       <div
-        className={`bg-transparent fixed ${
+        className={`bg-transparent fixed z-20 ${
           isOpenMenu ? "right-0" : "-right-64"
         } w-60 top-20 lg:top-0 lg:right-0 lg:pt-5 lg:pr-5 flex-col justify-start font-poppins z-10`}
       >

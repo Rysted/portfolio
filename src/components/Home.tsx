@@ -29,7 +29,7 @@ const Home = () => {
               text="LinkedIn"
               title="Ir a mi perfil de LinkedIn"
             >
-              <LinkedIn />
+              <LinkedIn styles="h-5" />
             </Redirect>
 
             <Redirect
@@ -37,7 +37,7 @@ const Home = () => {
               text="GitHub"
               title="Ir a mi perfil de GitHub"
             >
-              <GitHub />
+              <GitHub styles="h-5" />
             </Redirect>
 
             <Redirect

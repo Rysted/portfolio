@@ -32,7 +32,7 @@ const BackToTop = () => {
       {isVisible && (
         <button
           onClick={scrollToTop}
-          className="lg:opacity-0 lg:pointer-events-none group fixed bottom-5 right-5 p-5 rounded-full bg-primary-500 hover:bg-primary-600 dark:bg-primary-500 dark:hover:bg-primary-300 transition-all duration-200 ease-in-out"
+          className="lg:opacity-0 lg:pointer-events-none group fixed z-10 bottom-5 right-5 p-4 rounded-full bg-primary-500 hover:bg-primary-600 dark:bg-primary-500 dark:hover:bg-primary-300 transition-all duration-200 ease-in-out"
           title="Ir al principio"
           aria-label="Ir al principio"
         >

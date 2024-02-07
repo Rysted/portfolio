@@ -324,7 +324,7 @@ export const LinkedIn = ({
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
       fill="white"
-      className={`h-5 ${styles && styles} ${
+      className={`${styles && styles} ${
         hover &&
         "group-hover:fill-primary-600 dark:group-hover:fill-primary-300"
       } dark:fill-dark_text transition-all duration-200 ease-in-out`}
@@ -355,7 +355,7 @@ export const GitHub = ({
       viewBox="0 0 24 24"
       xmlns="http://www.w3.org/2000/svg"
       fill="white"
-      className={`h-5 dark:fill-dark_text ${styles && styles} ${
+      className={`dark:fill-dark_text ${styles && styles} ${
         hover &&
         "group-hover:fill-primary-600 dark:group-hover:fill-primary-300"
       } transition-all duration-200 ease-in-out`}
