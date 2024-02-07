@@ -57,7 +57,7 @@ const Home = () => {
             </Redirect>
           </nav>
         </div>
-        <div className="hidden lg:block absolute inset-0 -z-10 h-full w-full items-center px-5 py-24 dark:bg-[radial-gradient(125%_125%_at_50%_10%,#000_40%,#4ab0ff_100%)] bg-[radial-gradient(125%_125%_at_50%_10%,#fff_40%,#4ab0ff_100%)]"></div>
+        <div className="hidden lg:block absolute inset-0 -z-10 h-full w-full items-center px-5 py-24 dark:bg-[radial-gradient(125%_125%_at_50%_10%,#212121_50%,#4ab0ff_100%)] bg-[radial-gradient(125%_125%_at_50%_10%,#fff_50%,#4ab0ff_100%)]"></div>
       </article>
     </section>
   );
