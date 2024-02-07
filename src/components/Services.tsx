@@ -13,7 +13,7 @@ const Services = () => {
     <section id="services" className="px-5 py-10 select-none">
       <header className="mt-20 flex justify-start items-center gap-x-2 md:max-w-[800px] lg:max-w-[1100px] mx-auto">
         {" "}
-        <ServicesIcon styles="w-8 h-8" />
+        <ServicesIcon styles="w-8 h-8" colors={true} />
         <h2 className="text-3xl font-bold text-light_text dark:text-dark_text transition-all duration-200 ease-in-out">
           Servicios
         </h2>

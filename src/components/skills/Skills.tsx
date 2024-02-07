@@ -9,7 +9,7 @@ const Skills = () => {
   return (
     <section id="skills" className="px-5 py-10 xl:pb-64 select-none">
       <header className="mt-20 flex justify-start items-center gap-x-2 md:max-w-[800px] lg:max-w-[1100px] mx-auto">
-        <BookCode styles="w-8 h-8" />
+        <BookCode styles="w-8 h-8" colors={true} />
         <h2 className="text-3xl font-bold text-light_text dark:text-dark_text transition-all duration-200 ease-in-out">
           Habilidades
         </h2>

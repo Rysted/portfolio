@@ -81,10 +81,12 @@ export const ServicesIcon = ({
   hover,
   active,
   styles,
+  colors,
 }: {
   hover?: boolean;
   active?: boolean;
   styles?: string;
+  colors?: boolean;
 }) => {
   return (
     <svg
@@ -100,7 +102,9 @@ export const ServicesIcon = ({
         hover &&
         "group-hover:stroke-primary-600 dark:group-hover:stroke-primary-300"
       } ${
-        active
+        colors
+          ? "stroke-light_text dark:stroke-dark_text"
+          : active
           ? "stroke-primary-600 dark:stroke-primary-300"
           : "stroke-secondary-700 dark:stroke-secondary-300"
       } ${styles && styles} transition-all duration-200 ease-in-out`}
@@ -115,11 +119,14 @@ export const CodeIcon = ({
   hover,
   active,
   styles,
+  colors,
 }: {
   hover?: boolean;
   active?: boolean;
   styles?: string;
+  colors?: boolean;
 }) => {
+  console.log(hover, active, styles, colors);
   return (
     <svg
       width="20"
@@ -135,7 +142,9 @@ export const CodeIcon = ({
         hover &&
         "group-hover:stroke-primary-600 dark:group-hover:stroke-primary-300"
       } ${
-        active
+        colors
+          ? "stroke-light_text dark:stroke-dark_text"
+          : active
           ? "stroke-primary-600 dark:stroke-primary-300"
           : "stroke-secondary-700 dark:stroke-secondary-300"
       } ${styles && styles} transition-all duration-200 ease-in-out`}
@@ -151,10 +160,12 @@ export const BookCode = ({
   hover,
   active,
   styles,
+  colors,
 }: {
   hover?: boolean;
   active?: boolean;
   styles?: string;
+  colors?: boolean;
 }) => {
   return (
     <svg
@@ -171,12 +182,12 @@ export const BookCode = ({
         hover &&
         "group-hover:stroke-primary-600 dark:group-hover:stroke-primary-300"
       } ${
-        active
+        colors
+          ? "stroke-light_text dark:stroke-dark_text"
+          : active
           ? "stroke-primary-600 dark:stroke-primary-300"
           : "stroke-secondary-700 dark:stroke-secondary-300"
-      } ${
-        styles && styles
-      } stroke-primary-600  dark:stroke-primary-300 transition-all duration-200 ease-in-out`}
+      } ${styles && styles} transition-all duration-200 ease-in-out`}
     >
       <path d="M4 19V5C4 3.89543 4.89543 3 6 3H19.4C19.7314 3 20 3.26863 20 3.6V16.7143" />
       <path d="M6 17H20" />
