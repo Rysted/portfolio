@@ -196,7 +196,7 @@ export const spanish: Schema = {
         skills: ["React", "TailwindCSS", "Bootstrap"],
       },
       {
-        title: "Lado del servidor",
+        title: "Servidor",
         skills: ["Node.js", "Express.js", "EJS", "Sequelize"],
       },
       { title: "Bases de datos", skills: ["MySQL"] },
@@ -412,8 +412,8 @@ export const english = {
       },
     ],
     button: {
-      demo: "Demo",
-      code: "Code",
+      demoTitle: "Demo",
+      codeTitle: "Code",
       showMore: "Show more",
       noMoreResults: "No more results",
     },
