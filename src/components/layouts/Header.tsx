@@ -53,7 +53,7 @@ const Header = ({ header }: { header: header }) => {
         onClick={disableSidebar}
       ></span>
       <div
-        className={`bg-transparent fixed z-20 ${
+        className={`fixed z-20 ${
           isOpenMenu ? "right-0" : "-right-64"
         } w-60 h-screen lg:h-full overflow-auto top-20 lg:top-0 lg:right-0 lg:py-5 lg:pr-5 flex-col justify-start font-poppins z-10 bg-light_highlight dark:bg-dark_highlight lg:bg-transparent lg:dark:bg-transparent transition-all duration-200 ease-in-out`}
       >
