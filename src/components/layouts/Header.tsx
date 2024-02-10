@@ -1,13 +1,15 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 import NavMenu from "./NavMenu";
 
 // Icons
-import { LogoTipo, Burger, Close } from "../../Icons/Icons";
+import { LogoTipo, Burger, Close } from "../../data/Icons";
+import { header } from "@schema";
 
-const Header = () => {
+const Header = ({ header }: { header: header }) => {
+  const { menu, navMenu, themeMenu, languageMenu } = header;
+
   const [isOpenMenu, setIsOpenMenu] = useState<boolean>(false);
-  const [activeLink, setActiveLink] = useState("");
 
   const enableSidebar = () => {
     setIsOpenMenu(true);
@@ -19,30 +21,6 @@ const Header = () => {
     document.body.classList.remove("body_overflow");
   };
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const sections = document.querySelectorAll("section");
-
-      sections.forEach((section) => {
-        const top = section.offsetTop;
-        const height = section.offsetHeight;
-        const id = section.id;
-
-        if (window.scrollY >= top - 100 && window.scrollY < top + height) {
-          setActiveLink(id);
-        }
-      });
-    };
-
-    setActiveLink("home");
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
   return (
     <header className="relative overflow-x-hidden select-none">
       <div className="lg:hidden fixed z-20 top-0 w-full h-20 flex justify-between items-center px-5 bg-light_highlight dark:bg-dark_highlight transition-all duration-200 ease-in-out shadow-light_bottom dark:shadow-dark_bottom">
@@ -52,7 +30,7 @@ const Header = () => {
           <button
             onClick={disableSidebar}
             className="group"
-            aria-label="Abrir menú"
+            aria-label={menu.close}
           >
             <Close />
           </button>
@@ -60,7 +38,7 @@ const Header = () => {
           <button
             onClick={enableSidebar}
             className="group"
-            aria-label="Abrir menú"
+            aria-label={menu.open}
           >
             <Burger />
           </button>
@@ -77,14 +55,19 @@ const Header = () => {
       <div
         className={`bg-transparent fixed z-20 ${
           isOpenMenu ? "right-0" : "-right-64"
-        } w-60 top-20 lg:top-0 lg:right-0 lg:pt-5 lg:pr-5 flex-col justify-start font-poppins z-10 transition-all duration-200 ease-in-out`}
+        } w-60 h-screen lg:h-full overflow-auto top-20 lg:top-0 lg:right-0 lg:py-5 lg:pr-5 flex-col justify-start font-poppins z-10 bg-light_highlight dark:bg-dark_highlight lg:bg-transparent lg:dark:bg-transparent transition-all duration-200 ease-in-out`}
       >
-        <div className="lg:relative lg:before:content-[''] lg:before:absolute lg:before:w-20 lg:before:h-screen lg:before:bg-gradient-to-r lg:before:from-cyan-500 lg:before:to-blue-500 lg:before:left-[70px] lg:before:-top-52 lg:before:animate-spin lg:after:content-[''] lg:after:absolute lg:after:bg-light_highlight lg:dark:after:bg-dark_highlight lg:after:inset-1 lg:after:rounded-lg lg:rounded-xl lg:h-max h-screen overflow-hidden bg-light_highlight dark:bg-dark_highlight transition-all duration-200 ease-in-out lg:after:transition-all lg:after:duration-200 lg:after:ease-in-out">
-          <div className="relative z-10 opacity-0 w-0 h-0 my-0 lg:w-full lg:flex lg:justify-center lg:h-auto lg:opacity-100 lg:pt-8 lg:pb-5">
+        <div className="pt-5 lg:pt-0 lg:relative h-max lg:rounded-xl lg:bg-light_highlight lg:dark:bg-dark_highlight transition-all duration-200 ease-in-out">
+          <div className="relative z-10 opacity-0 w-0 h-0 my-0 lg:w-full lg:flex lg:justify-center lg:h-max lg:opacity-100 lg:pt-8 lg:pb-5">
             <LogoTipo />
           </div>
 
-          <NavMenu disableSidebar={disableSidebar} active={activeLink} />
+          <NavMenu
+            navMenu={navMenu}
+            themeMenu={themeMenu}
+            languageMenu={languageMenu}
+            disableSidebar={disableSidebar}
+          />
         </div>
       </div>
     </header>

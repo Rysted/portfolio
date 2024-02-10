@@ -8,6 +8,8 @@ const ProjectsCard = ({
   code,
   demo,
   alt,
+  codeTitle,
+  demoTitle,
 }: {
   image: string;
   title: string;
@@ -16,6 +18,8 @@ const ProjectsCard = ({
   code?: string;
   demo?: string;
   alt: string;
+  codeTitle: string;
+  demoTitle: string;
 }) => {
   return (
     <div className="flex flex-col justify-between bg-light_highlight dark:bg-dark_highlight rounded-b-xl shadow-lg transition-all duration-200 ease-in-out">
@@ -52,13 +56,17 @@ const ProjectsCard = ({
       <div className="p-4 flex justify-between">
         {code && (
           <Redirect
-            text="Código"
+            text={codeTitle}
             url={code}
             title={`Ver código de: ${title}`}
           />
         )}
         {demo && (
-          <Redirect text="Demo" url={demo} title={`Ver demo de: ${title}`} />
+          <Redirect
+            text={demoTitle}
+            url={demo}
+            title={`Ver demo de: ${title}`}
+          />
         )}
       </div>
     </div>

@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react";
 
-// Icons
-import { Sun, Moon } from "../../Icons/Icons";
+import { themeMenu } from "@schema";
 
-const Theme = () => {
+// Icons
+import { Sun, Moon } from "../../data/Icons";
+
+const Theme = ({ themeMenu }: { themeMenu: themeMenu }) => {
   const [theme, setTheme] = useState<"dark" | "light">(() => {
     return window.matchMedia("(prefers-color-scheme: dark)").matches
       ? "dark"
@@ -49,7 +51,7 @@ const Theme = () => {
               theme === "light" ? "text-primary-600" : "dark:text-secondary-300"
             } h-5 text-base font-semibold  dark:group-hover:text-primary-300 transition-all duration-200 ease-in-out`}
           >
-            Claro
+            {themeMenu.light}
           </span>
         </div>
       </button>
@@ -69,7 +71,7 @@ const Theme = () => {
               theme === "dark" ? "dark:text-primary-300" : "text-secondary-700"
             } h-5 text-base font-semibold group-hover:text-primary-600 dark:group-hover:text-primary-300 transition-all duration-200 ease-in-out`}
           >
-            Oscuro
+            {themeMenu.dark}
           </span>
         </div>
       </button>
