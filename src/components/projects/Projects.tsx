@@ -36,8 +36,8 @@ const Projects = ({ projects }: { projects: projects }) => {
             demo={project.demo}
             image={project.image}
             tags={project.tags}
-            demoTitle={projects.button.codeTitle}
-            codeTitle={projects.button.demoTitle}
+            codeTitle={projects.button.codeTitle}
+            demoTitle={projects.button.demoTitle}
             alt={`Imagen de ${project.title}`}
           />
         ))}
