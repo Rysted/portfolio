@@ -112,11 +112,11 @@ export const spanish: Schema = {
     cards: [
       {
         image: "newPortfolio.webp",
-        title: "Portfolio",
+        title: "Portafolio",
         description:
-          "Este es mi nuevo portafolio, aquí podrás encontrar una selección de mis proyectos más recientes y mi información de contacto.",
+          "Este es mi nuevo portafolio, acá vas a encontrar una sección con mi información de contacto, mis proyectos más recientes y mis habilidades.",
         tags: ["HTML", "React", "TypeScript", "Tailwind CSS"],
-        code: "",
+        code: "https://github.com/Rysted/portfolio",
         demo: "https://rysted.netlify.app/",
       },
       {
@@ -349,9 +349,9 @@ export const english = {
         image: "newPortfolio.webp",
         title: "Portfolio",
         description:
-          "This is my new portfolio, here you can find a selection of my most recent projects and my contact information.",
+          "This is my new portfolio, here you will find a section with my contact information, my most recent projects, and my skills.",
         tags: ["HTML", "React", "TypeScript", "Tailwind CSS"],
-        code: "",
+        code: "https://github.com/Rysted/portfolio",
         demo: "https://rysted.netlify.app/",
       },
       {
