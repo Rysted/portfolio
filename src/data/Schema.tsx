@@ -86,7 +86,7 @@ export type footer = {
   socials: SocialProfile[];
 };
 
-export type Schema = {
+export interface Schema {
   selected: string;
   header: header;
   home: home;
@@ -95,4 +95,4 @@ export type Schema = {
   skills: skills;
   backToTop: backToTop;
   footer: footer;
-};
+}

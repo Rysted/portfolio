@@ -3,8 +3,8 @@ import { LanguageProvider, LanguageContext } from "./context/LanguageContext";
 import { useContext } from "react";
 // Components
 import Header from "./components/layouts/Header";
-import Home from "./components/Home";
-import Services from "./components/Services";
+import Home from "./components/home/Home";
+import Services from "./components/services/Services";
 import Projects from "./components/projects/Projects";
 import Skills from "./components/skills/Skills";
 import BackToTop from "./components/common/BackToTop";

@@ -192,15 +192,15 @@ export const spanish: Schema = {
         skills: ["Typescript", "Javascript", "HTML", "CSS"],
       },
       {
-        title: "Interfaz de usuario",
+        title: "Frontend",
         skills: ["React", "TailwindCSS", "Bootstrap"],
       },
       {
-        title: "Servidores",
+        title: "Backend",
         skills: ["Node.js", "Express.js", "EJS", "Sequelize"],
       },
       { title: "Bases de datos", skills: ["MySQL"] },
-      { title: "Diseño", skills: ["Figma", "Miro"] },
+      { title: "Diseño", skills: ["Figma", "Miro", "whimsical"] },
       {
         title: "Herramientas",
         skills: [
@@ -432,7 +432,7 @@ export const english = {
         skills: ["Node.js", "Express.js", "EJS", "Sequelize"],
       },
       { title: "Databases", skills: ["MySQL"] },
-      { title: "Design", skills: ["Figma", "Miro"] },
+      { title: "Design", skills: ["Figma", "Miro", "whimsical"] },
       {
         title: "Tools",
         skills: [

@@ -54,20 +54,12 @@ const ProjectsCard = ({
         </div>
       </div>
       <div className="p-4 flex justify-between">
-        {code && (
-          <Redirect
-            text={codeTitle}
-            url={code}
-            title={`Ver código de: ${title}`}
-          />
-        )}
-        {demo && (
-          <Redirect
-            text={demoTitle}
-            url={demo}
-            title={`Ver demo de: ${title}`}
-          />
-        )}
+        <Redirect
+          text={codeTitle}
+          url={code ? code : 'private'}
+          title={`Ver código de: ${title}`}
+        />
+        <Redirect text={demoTitle} url={demo ? demo : 'private'} title={`Ver demo de: ${title}`} />
       </div>
     </div>
   );

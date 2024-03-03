@@ -1,6 +1,6 @@
 import { home } from "@schema";
 
-import Redirect from "./common/Redirect";
+import Redirect from "../common/Redirect";
 
 const Home = ({ home }: { home: home }) => {
   return (

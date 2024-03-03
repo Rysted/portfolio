@@ -548,6 +548,24 @@ export const Maintenance = () => {
   );
 };
 
+export const LockIcon = () => {
+  return (
+    <svg
+      width="17"
+      height="19"
+      viewBox="0 0 17 19"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      stroke-width="1.5"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      className="stroke-dark_text w-5 h-5 transition-all duration-200 ease-in-out"
+    >
+      <path d="M11.5 9.5H12.55C12.7985 9.5 13 9.70145 13 9.95V15.05C13 15.2985 12.7985 15.5 12.55 15.5H4.45C4.20147 15.5 4 15.2985 4 15.05V9.95C4 9.70145 4.20147 9.5 4.45 9.5H5.5M11.5 9.5V6.5C11.5 5.5 10.9 3.5 8.5 3.5C6.1 3.5 5.5 5.5 5.5 6.5V9.5M11.5 9.5H5.5M8.5 11.5V13.5" />
+    </svg>
+  );
+};
+
 export const BackToTopIcon = () => {
   return (
     <svg

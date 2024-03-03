@@ -1,6 +1,6 @@
 import { services } from "@schema";
 
-import ServiceCard from "./common/ServiceCard";
+import ServiceCard from "../common/ServiceCard";
 
 const Services = ({ services }: { services: services }) => {
   return (

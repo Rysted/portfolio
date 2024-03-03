@@ -5,7 +5,7 @@ import { backToTop } from "@schema";
 import { BackToTopIcon } from "../../data/Icons";
 
 const BackToTop = ({ backToTop }: { backToTop: backToTop }) => {
-  const [isVisible, setIsVisible] = useState(false);
+  const [isVisible, setIsVisible] = useState<boolean>(false);
 
   useEffect(() => {
     const toggleVisibility = () => {
