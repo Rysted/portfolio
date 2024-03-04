@@ -22,7 +22,7 @@ const ProjectsCard = ({
   demoTitle: string;
 }) => {
   return (
-    <div className="flex flex-col justify-between bg-light_highlight dark:bg-dark_highlight rounded-b-xl shadow-lg transition-all duration-200 ease-in-out">
+    <div className="flex flex-col justify-between bg-light_highlight dark:bg-dark_highlight rounded-xl shadow-lg transition-all duration-200 ease-in-out">
       <div>
         <div className="bg-primary-600 dark:bg-primary-300 h-56 rounded-t-xl flex justify-center">
           <img
